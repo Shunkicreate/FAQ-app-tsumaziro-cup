@@ -9,8 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.get("/", async (req, res) => {
   res.status(200).json({message: "hello world!"});
-}
-);
+});
 
 app.get("/api/healthcheck", async (req, res) => {
   res.status(200).json({message: "ok"});
