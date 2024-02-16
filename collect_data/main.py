@@ -1,4 +1,4 @@
-from fetch_container_content import fetch_container_content
+from fetch_content import fetch_container_content
 from convert_html_to_md import convert_html_to_md
 def main(args=None):
     """
