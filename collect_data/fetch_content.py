@@ -9,15 +9,17 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 def fetch_container_content(url):
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.366'
     }
     try:
-        response = requests.get(url)
+        response = requests.get(url, headers=headers)
         response.raise_for_status()  # HTTPエラーがあれば例外を発生させる
         soup = BeautifulSoup(response.text, 'html.parser')
         container = soup.find(class_='container')  # containerクラスの内容を取得
+        print("success")
         return str(container) if container else "Container class not found."
     except requests.RequestException as e:
+        print(f"Error fetching the URL: {e}")
         return f"Error fetching the URL: {e}"
     
 def fetch_faq_list(url):
@@ -60,5 +62,5 @@ def fetch_faq_list(url):
         return f"Error fetching the URL: {e}"
     finally:
         driver.quit()
-    
-fetch_faq_list("https://helpfeel.com/raksul/?q=%E6%94%AF%E6%89%95%E3%81%84%E6%96%B9%E6%B3%95")
+
+fetch_container_content("https://helpfeel.com/raksul/%E5%8D%B0%E5%88%B7%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E7%B4%99%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AF%E6%B1%BA%E3%81%BE%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8C%E3%81%A9%E3%81%AE%E5%95%86%E5%93%81%E3%82%92%E9%81%B8%E3%81%B9%E3%81%B0%E3%82%88%E3%81%84%E3%81%8B%E3%82%8F%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84-62625ced141b610023e2cf72")  
