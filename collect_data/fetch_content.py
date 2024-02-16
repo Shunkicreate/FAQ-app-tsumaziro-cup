@@ -21,6 +21,15 @@ def fetch_container_content(url):
         return f"Error fetching the URL: {e}"
     
 def fetch_faq_list(url):
+    def replace_url_prefix(text):
+        # 置換前のプレフィックスと置換後のURL
+        old_prefix = "./"
+        new_prefix = "https://helpfeel.com/raksul/"
+        
+        # 文字列内の全てのold_prefixをnew_prefixに置換
+        new_text = text.replace(old_prefix, new_prefix)
+    
+        return new_text
     options = webdriver.ChromeOptions()
     options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3')
 
@@ -43,7 +52,8 @@ def fetch_faq_list(url):
             a_tag = li.find('a')
             if a_tag:
                 faq_text = ' '.join(a_tag.stripped_strings)  # テキストを結合
-                faq_link = a_tag.get('href', '')
+                faq_related_link = a_tag.get('href', '')
+                faq_link = replace_url_prefix(faq_related_link)
                 faqs.append({'text': faq_text, 'link': faq_link})
         return faqs
     except requests.RequestException as e:

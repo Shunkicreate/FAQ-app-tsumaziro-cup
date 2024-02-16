@@ -117,3 +117,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+#collect_data/venvで、pythonのvenvを無視
+collect_data/venv
