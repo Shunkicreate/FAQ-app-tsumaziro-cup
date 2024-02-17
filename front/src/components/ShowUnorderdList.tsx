@@ -1,8 +1,5 @@
 import { Link, ListItem, UnorderedList, useColorModeValue } from "@chakra-ui/react";
-type FAQ = {
-    question: string;
-    pageTitle: string;
-};
+import { FAQ } from "../types"
 
 type FAQListProps = {
     items: FAQ[];

@@ -1,41 +1,10 @@
-import { useEffect, useState } from "react";
 import wanko from "@/assets/wanko.svg";
 import prompt from "@/assets/prompt.svg";
 import ShowUnorderedList from "../components/ShowUnorderdList";
-type FAQ = {
-  question: string;
-  pageTitle: string;
-};
+import useQuestion from "../hooks/useQuestion";
 
 export function TopPage(): JSX.Element {
-  const [input, setInput] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
-  const [faqs, setFaqs] = useState<FAQ[]>([]);
-  const [defaultFaqs, setDefaultFaqs] = useState<FAQ[]>([]);
-
-  useEffect(() => {
-    (async () => {
-      const res = await fetch("/api/faqs");
-      const faqs = await res.json();
-      localStorage.setItem("faqs", JSON.stringify(faqs));
-      setDefaultFaqs(faqs.slice(0, 5));
-      setIsLoading(false);
-    })();
-  }, []);
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    setInput(e.target.value);
-    if (e.target.value === "") {
-      setFaqs([]);
-      return;
-    }
-
-    const faqs = JSON.parse(localStorage.getItem("faqs")!);
-    const filteredFaqs = faqs.filter((faq: FAQ) =>
-      faq.question.toLowerCase().includes(e.target.value.toLowerCase()),
-    );
-    setFaqs(filteredFaqs);
-  };
+  const { input, isLoading, faqs, defaultFaqs, handleInputChange } = useQuestion();
 
   if (isLoading) {
     return <p>Loading...</p>;
