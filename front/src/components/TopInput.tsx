@@ -1,4 +1,4 @@
-import { Button, Input, Image, Stack, Box } from "@chakra-ui/react";
+import {Button, Input, Image, Stack, Box} from "@chakra-ui/react";
 import wanko from "../assets/wanko.svg";
 
 interface TopInputProps {
@@ -8,17 +8,22 @@ interface TopInputProps {
 }
 
 const TopInput = (props: TopInputProps): JSX.Element => {
-  const { input, handleInputChange, handleInputSubmit } = props;
+  const {input, handleInputChange, handleInputSubmit} = props;
   return (
     <Stack spacing={4} align="center">
       <Box w="32">
         <Image src={wanko} alt="wanko" />
       </Box>
       <form onSubmit={handleInputSubmit} className="w-full">
-        <Stack direction="row" align="center" w={{
-          base: "80%",
-          md: "70%",
-        }} m={"0 auto"}>
+        <Stack
+          direction="row"
+          align="center"
+          w={{
+            base: "80%",
+            md: "70%",
+          }}
+          m={"0 auto"}
+        >
           <Input
             type="search"
             value={input}
@@ -32,7 +37,12 @@ const TopInput = (props: TopInputProps): JSX.Element => {
             py="3"
             shadow="md"
           />
-          <Button colorScheme="WhiteAlpha" variant="outline" type="submit" tabIndex={2}>
+          <Button
+            colorScheme="WhiteAlpha"
+            variant="outline"
+            type="submit"
+            tabIndex={2}
+          >
             検索
           </Button>
         </Stack>
