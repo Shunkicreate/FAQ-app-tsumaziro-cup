@@ -22,11 +22,11 @@ WORKDIR /app
 
 # ビルドステージから必要なファイルをコピー
 COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/front/dist ./front/dist
-COPY --from=builder /app/api/dist ./api/dist
+COPY --from=builder /app/front/dist/src ./front/dist
+COPY --from=builder /app/api/dist ./api/
 COPY ./api/ ./api/
 COPY ./data ./data
 
 EXPOSE 8000
 
-CMD ["node", "./api/dist/src/run_server.js"]
+CMD ["node", "./api/dist/run_server.js"]
