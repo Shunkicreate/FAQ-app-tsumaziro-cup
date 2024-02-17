@@ -14,7 +14,7 @@ jobs:
 
     #  githubのsecretsに登録した値を.envとして使う
       - name: Set up .env
-        run: echo 'VITE_AZURE_SEARCH_API_KEYL="${{ secrets.VITE_AZURE_SEARCH_API_KEY }}"' > ./front/.env
+        run: echo 'VITE_AZURE_SEARCH_API_KEY="${{ secrets.VITE_AZURE_SEARCH_API_KEY }}"' > ./front/.env
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
