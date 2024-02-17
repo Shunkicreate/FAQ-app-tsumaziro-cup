@@ -4,7 +4,7 @@ import {RouterProvider, createBrowserRouter} from "react-router-dom";
 import {TopPage} from "./pages/top.tsx";
 import {AnswerPage} from "./pages/answer.tsx";
 import {Layout} from "./components/layout.tsx";
-import { ChakraProvider } from '@chakra-ui/react';
+import {ChakraProvider} from "@chakra-ui/react";
 import "./index.css";
 
 const router = createBrowserRouter([
