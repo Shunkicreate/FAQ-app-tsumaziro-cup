@@ -9,4 +9,14 @@ type Page = {
 
 type Lines = Array<{id: string; text: string}>;
 
-export type {FAQ, Page, Lines};
+type ApiResponse = {
+  "@search.score": number;
+  link: string;
+  questions: string[];
+  AzureSearch_DocumentKey: string;
+  keyphrases: string[];
+};
+
+type ApiResponseArray = ApiResponse[];
+
+export type {FAQ, Page, Lines, ApiResponseArray};

@@ -34,7 +34,7 @@ const FAQList = ({
             _hover={{bg: hoverColor}}
             className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
           >
-            <Link to={`/pages/${faq.pageTitle}`}>{faq.question}</Link>
+            <Link to={`${faq.pageTitle}`}>{faq.question}</Link>
           </ListItem>
         ))}
       </UnorderedList>
