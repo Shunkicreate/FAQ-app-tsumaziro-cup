@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import wanko from "@/assets/wanko.svg";
 import prompt from "@/assets/prompt.svg";
+import {azureAISearch} from "./api";
 import {UnorderedList, ListItem, useColorModeValue} from "@chakra-ui/react";
 type FAQ = {
   question: string;
@@ -13,6 +14,7 @@ export function TopPage(): JSX.Element {
   const [isLoading, setIsLoading] = useState(true);
   const [faqs, setFaqs] = useState<FAQ[]>([]);
   const [defaultFaqs, setDefaultFaqs] = useState<FAQ[]>([]);
+  const [aiSearchResult, setAISearchResult] = useState<string>("");
   const color = useColorModeValue("#2B546A", "gray.300");
   const hoverColor = useColorModeValue("gray.200", "gray.900");
 
@@ -25,6 +27,12 @@ export function TopPage(): JSX.Element {
       setIsLoading(false);
     })();
   }, []);
+
+  const handleClickAISearch = async (): Promise<void> => {
+    const result: string = await azureAISearch(input);
+    setAISearchResult(result);
+    return;
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setInput(e.target.value);
@@ -66,6 +74,8 @@ export function TopPage(): JSX.Element {
             data-test="search-input"
             className="w-full sm:w-[36rem] h-12 px-4 py-3 shadow outline-0"
           ></input>
+          <button onClick={handleClickAISearch}>いでよAPI</button>
+          <div>{aiSearchResult}</div>
         </div>
       </div>
       <div className="mt-6 px-4 py-6 h-[calc(100%-12rem)] overflow-scroll shadow">
