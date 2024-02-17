@@ -18,19 +18,11 @@ const useQuestion = () => {
     (async () => {
       const res = await fetch("/api/faqs");
       const faqs = (await res.json()) as FAQ[];
-      faqs.map(faq => {
-        faq.pageTitle = constructUrl(faq.pageTitle);
-      });
       localStorage.setItem("faqs", JSON.stringify(faqs));
       setDefaultFaqs(faqs.slice(0, 5));
       setIsLoading(false);
     })();
   }, []);
-
-  const constructUrl = (path: string): string => {
-    const baseUrl = "https://helpfeel.com/raksul/";
-    return baseUrl + path;
-  };
 
   const updateFaqs = (faqs: FAQ[], aiSearchResult: ApiResponseArray): FAQ[] => {
     // aiSearchResultからFAQオブジェクトの配列を作成
