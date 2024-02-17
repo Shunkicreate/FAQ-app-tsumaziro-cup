@@ -1,45 +1,33 @@
-# ベースイメージとしてNode.jsのLTS版を使用
-FROM node:lts as builder
+# ビルド用のイメージ
+FROM node:lts-alpine as builder
 
-# 作業ディレクトリを設定
 WORKDIR /app
 
-# package.jsonとpackage-lock.jsonをコピー
 COPY package*.json ./
 
-# 依存関係をインストール
-RUN npm install
+# 依存関係をインストールし、不要なファイルを削除
+RUN npm install && npm cache clean --force
 
-# アプリケーションのソースコードをコピー
 COPY . .
 
-# ビルドを実行
 RUN npm run build
 
-# 本番用のイメージ
-FROM node:lts
+RUN npm run build:api
 
-# 作業ディレクトリを設定
+# 本番用のイメージ
+FROM node:lts-alpine
+
 WORKDIR /app
 
-RUN npm i -g ts-node
-
-# package.jsonとpackage-lock.jsonをコピー
+# 本番環境では開発依存関係をインストールしない
 COPY package*.json ./
+RUN npm install --production
 
-# 本番依存関係のみをインストール
-RUN npm install
-
-# ビルドステップからdistディレクトリをコピー
 COPY --from=builder /app/front/dist ./front/dist
-
-# サーバーファイルをコピー
+COPY --from=builder /app/api/dist ./api/dist
 COPY ./api/ ./api/
+COPY ./data ./data
 
-COPY ./data .//data
-
-# 8000ポートを公開
 EXPOSE 8000
 
-# Expressサーバを起動
-CMD ["ts-node", "./api/bin/run_server.ts"]
+CMD ["node", "./api/dist/run_server.js"]

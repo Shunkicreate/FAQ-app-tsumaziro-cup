@@ -1,29 +1,18 @@
 {
   "compilerOptions": {
-    /* Visit https://aka.ms/tsconfig.json to read more about this file */
-
-    /* Language and Environment */
-    "target": "es2021",
-    "lib": ["es2021"],
-
-    /* Modules */
-    "module": "commonjs",
-    "rootDir": "./",
-    "moduleResolution": "node",
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-
-    /* Emit */
-    "noEmitOnError": true,
-
-    /* Interop Constraints */
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-
-    /* Type Checking */
-    "strict": true
+    "target": "ESNext", // コンパイルされるJavaScriptのバージョン
+    "module": "CommonJS", // 使用するモジュールシステム
+    "strict": true, // 厳密な型チェックを有効にする
+    "esModuleInterop": true, // デフォルトのエクスポートとの互換性を確保
+    "forceConsistentCasingInFileNames": true, // ファイル名の大文字小文字の一貫性を強制
+    "skipLibCheck": true, // すべての宣言ファイルの型チェックをスキップ
+    "outDir": "./dist", // 出力ディレクトリ
+    "rootDir": "./src", // ソースファイルが含まれるディレクトリ
+    "removeComments": true // 出力からコメントを削除
   },
-  "include": ["src/**/*", "bin/**/*"]
+  "include": ["./src/**/*"],
+  "exclude": [
+    "node_modules", // 除外するディレクトリ
+    "**/*.spec.ts"
+  ]
 }
