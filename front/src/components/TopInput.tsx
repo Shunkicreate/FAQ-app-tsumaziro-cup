@@ -1,6 +1,5 @@
-import wanko from "@/assets/wanko.svg";
-import prompt from "@/assets/prompt.svg";
-import {Button} from "@chakra-ui/react";
+import { Button, Input, Image, Stack, Box } from "@chakra-ui/react";
+import wanko from "../assets/wanko.svg";
 
 interface TopInputProps {
   input: string;
@@ -9,38 +8,36 @@ interface TopInputProps {
 }
 
 const TopInput = (props: TopInputProps): JSX.Element => {
-  const {input, handleInputChange, handleInputSubmit} = props;
+  const { input, handleInputChange, handleInputSubmit } = props;
   return (
-    <div className="flex flex-col">
-      <div className="flex justify-center">
-        <div className="relative w-96">
-          <img src={wanko} alt="wanko" />
-          <img
-            src={prompt}
-            alt="prompt"
-            className="absolute bottom-2 left-[4rem] md:left-[6rem]"
-          />
-        </div>
-      </div>
-      <div className="flex justify-center">
-        <form onSubmit={handleInputSubmit}>
-          <label htmlFor="search" className="sr-only">
-            質問を入力してください
-          </label>
-          <input
+    <Stack spacing={4} align="center">
+      <Box w="32">
+        <Image src={wanko} alt="wanko" />
+      </Box>
+      <form onSubmit={handleInputSubmit} className="w-full">
+        <Stack direction="row" align="center" w={{
+          base: "80%",
+          md: "70%",
+        }} m={"0 auto"}>
+          <Input
             type="search"
             value={input}
             onChange={handleInputChange}
             placeholder="例: メールマガジン"
             data-test="search-input"
-            className="w-full sm:w-[36rem] h-12 px-4 py-3 shadow outline-0"
-          ></input>
-          <Button colorScheme="BlackAlpha" variant="outline" type="submit">
+            w="100%"
+            // sm={{ w: "36rem" }}
+            h="12"
+            px="4"
+            py="3"
+            shadow="md"
+          />
+          <Button colorScheme="WhiteAlpha" variant="outline" type="submit">
             検索
           </Button>
-        </form>
-      </div>
-    </div>
+        </Stack>
+      </form>
+    </Stack>
   );
 };
 

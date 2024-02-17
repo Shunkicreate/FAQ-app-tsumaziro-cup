@@ -1,6 +1,6 @@
 import {Outlet} from "react-router-dom";
-import progateLogo from "@/assets/progate_logo.svg";
-import helpfeelLogo from "@/assets/helpfeel_logo.svg";
+import progateLogo from "../assets/progate_logo.svg";
+import helpfeelLogo from "../assets/helpfeel_logo.svg";
 import {ImCross} from "react-icons/im";
 import {Button, useColorMode} from "@chakra-ui/react";
 import {MoonIcon, SunIcon} from "@chakra-ui/icons";
