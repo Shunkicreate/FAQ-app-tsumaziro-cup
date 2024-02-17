@@ -26,11 +26,11 @@ export function TopPage(): JSX.Element {
     })();
   }, []);
 
-  const handleClickAISearch = async()=> { 
-    const result:string = await azureAISearch(input);
+  const handleClickAISearch = async (): Promise<void> => {
+    const result: string = await azureAISearch(input);
     setAISearchResult(result);
     return;
-  }
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setInput(e.target.value);
@@ -73,9 +73,7 @@ export function TopPage(): JSX.Element {
             className="w-full sm:w-[36rem] h-12 px-4 py-3 shadow outline-0"
           ></input>
           <button onClick={handleClickAISearch}>いでよAPI</button>
-          <div>
-            {aiSearchResult}
-          </div>
+          <div>{aiSearchResult}</div>
         </div>
       </div>
       <div className="mt-6 px-4 py-6 bg-white h-[calc(100%-12rem)] overflow-scroll shadow">
