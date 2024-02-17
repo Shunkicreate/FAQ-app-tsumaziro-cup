@@ -18,23 +18,23 @@ const FAQList = ({
   return (
     <>
       {input === "" ? (
-        <span className="text-[#2B546A] text-base">
-          Frequently Asked Questions
-        </span>
+        <span className="text-[#2B546A] text-base">よくある質問</span>
       ) : (
         <span className="text-[#2B546A] text-base">{`${items.length} questions matched`}</span>
       )}
       <UnorderedList p={4}>
-        {items.map(faq => (
+        {items.map((faq, i) => (
           <ListItem
-            key={faq.question}
+            key={i}
             pl={2}
             py={2}
             color={color}
             _hover={{bg: hoverColor}}
             className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
           >
-            <Link to={`${faq.pageTitle}`}>{faq.question}</Link>
+            <Link to={`${faq.pageTitle}`} tabIndex={i + 3}>
+              {faq.question}
+            </Link>
           </ListItem>
         ))}
       </UnorderedList>

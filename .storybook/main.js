@@ -21,6 +21,7 @@ const config = {
     getAbsolutePath("@storybook/addon-interactions"),
     '@storybook/addon-a11y',
     '@chakra-ui/storybook-addon',
+    'storybook-addon-react-router-v6',
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
@@ -32,14 +33,12 @@ const config = {
   features: {
     emotionAlias: false
   },
-  webpackFinal: async (config) => {
-    config.module.rules.push({
-      test: /\.mjs$/,
-      include: /node_modules/,
-      type: 'javascript/auto',
-    })
-
-    return config
+  webpackFinal: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, '../../front/src'),
+    };
+    return config;
   },
 };
 export default config;
