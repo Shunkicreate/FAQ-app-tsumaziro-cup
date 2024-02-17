@@ -4,7 +4,7 @@ export const azureAISearch = async (
   searchTerm: string,
 ): Promise<ApiResponseArray> => {
   const apiKey = import.meta.env.VITE_AZURE_SEARCH_API_KEY;
-  const url = `https://faqsite.search.windows.net/indexes/azureblob-index/docs?search=${searchTerm}&$count=true&api-version=2023-11-01`;
+  const url = `https://faqsite2.search.windows.net/indexes/azureblob-index/docs?search=${searchTerm}&$count=true&api-version=2023-11-01`;
   // apikeyを環境変数から取得する
 
   const headers = {
