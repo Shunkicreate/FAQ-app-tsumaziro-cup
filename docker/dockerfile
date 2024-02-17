@@ -23,7 +23,7 @@ WORKDIR /app
 
 # 本番環境では開発依存関係をインストールしない
 COPY package*.json ./
-RUN npm install --production
+RUN npm install
 
 COPY --from=builder /app/front/dist ./front/dist
 COPY --from=builder /app/api/dist ./api/dist
