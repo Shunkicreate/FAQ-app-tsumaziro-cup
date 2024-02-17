@@ -1,4 +1,5 @@
-import { Link, ListItem, UnorderedList, useColorModeValue } from "@chakra-ui/react";
+import { ListItem, UnorderedList, useColorModeValue } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { FAQ } from "../types"
 
 type FAQListProps = {
@@ -27,7 +28,7 @@ const FAQList = ({ items, color, hoverColor, input }: FAQListProps): JSX.Element
                         _hover={{ bg: hoverColor }}
                         className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
                     >
-                        <Link href={`/pages/${faq.pageTitle}`}>{faq.question}</Link>
+                        <Link to={`/pages/${faq.pageTitle}`}>{faq.question}</Link>
                     </ListItem>
                 ))}
             </UnorderedList>

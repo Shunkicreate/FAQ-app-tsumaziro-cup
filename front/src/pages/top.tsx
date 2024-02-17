@@ -1,12 +1,12 @@
 import ShowUnorderedList from "../components/ShowUnorderdList";
 import TopInput from "../components/TopInput";
 import useQuestion from "../hooks/useQuestion";
-
+import Loading from "../components/Loading";
 export function TopPage(): JSX.Element {
   const { input, isLoading, faqs, defaultFaqs, handleInputChange } = useQuestion();
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loading />;
   }
 
   return (

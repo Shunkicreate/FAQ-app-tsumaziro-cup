@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
-import {Link, useParams} from "react-router-dom";
-
+import {useParams} from "react-router-dom";
+import Loading from "../components/Loading";
+import ReturnToTopPageButton from "../components/ReturnToTopPageButton";
 type Page = {
   lines: Array<{id: string; text: string}>;
 };
@@ -24,7 +25,7 @@ export function AnswerPage(): JSX.Element {
   }, [pageTitle]);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loading />;
   }
 
   return (
@@ -44,13 +45,7 @@ export function AnswerPage(): JSX.Element {
           ))}
         </div>
       </div>
-      <div className="lg:max-w-[760px] mt-8 md:mt-14 flex justify-center">
-        <button className="px-10 py-5 bg-[#57D5C1]">
-          <Link to="/" className="text-white">
-            &lt; Return to Top Page
-          </Link>
-        </button>
-      </div>
+      <ReturnToTopPageButton />
     </>
   );
 }
