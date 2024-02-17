@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: 'class',
   theme: {
     screens: {
       sm: "380px",
@@ -13,6 +14,8 @@ module.exports = {
       decimal: "decimal",
       square: "square",
     },
+    darkMode: "class",
+
   },
   plugins: [],
 };
