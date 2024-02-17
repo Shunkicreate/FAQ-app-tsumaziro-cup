@@ -2,11 +2,19 @@ import ShowUnorderedList from "../components/ShowUnorderdList";
 import TopInput from "../components/TopInput";
 import useQuestion from "../hooks/useQuestion";
 import Loading from "../components/Loading";
-import { useEffect, useState } from "react";
-import { azureAISearch } from "../api/azureAISearch";
+import {useEffect, useState} from "react";
+import {azureAISearch} from "../api/azureAISearch";
 
 export function TopPage(): JSX.Element {
-  const { input, isLoading, setIsLoading, faqs, defaultFaqs, setDefaultFaqs, handleInputChange } = useQuestion();
+  const {
+    input,
+    isLoading,
+    setIsLoading,
+    faqs,
+    defaultFaqs,
+    setDefaultFaqs,
+    handleInputChange,
+  } = useQuestion();
   const [aiSearchResult, setAISearchResult] = useState<string>("");
   useEffect(() => {
     (async () => {
