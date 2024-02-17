@@ -22,8 +22,8 @@ WORKDIR /app
 
 # ビルドステージから必要なファイルをコピー
 COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/front/src/dist ./front/dist
-COPY --from=builder /app/api/dist ./api/
+COPY --from=builder /app/front/dist ./front/dist
+COPY --from=builder /app/api/dist/src ./api/dist
 COPY ./api/ ./api/
 COPY ./data ./data
 
