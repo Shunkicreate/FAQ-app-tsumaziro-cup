@@ -5,28 +5,28 @@ WORKDIR /app
 
 COPY . .
 
-# 依存関係をインストールし、不要なファイルを削除
+# 依存関係をインストール
 RUN npm install
 
+# アプリケーションのビルド
 RUN npm run build
-
 RUN npm run build:api
-
 RUN npm run generate
+
+# 開発依存関係を削除
+RUN npm prune --production
 
 # 本番用のイメージ
 FROM node:lts-alpine
 
 WORKDIR /app
 
-# 本番環境では開発依存関係をインストールしない
-COPY package*.json ./
-RUN npm install --production
-
+# ビルドステージから必要なファイルをコピー
+COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/front/dist ./front/dist
 COPY --from=builder /app/api/dist ./api/dist
 COPY ./api/ ./api/
-COPY  --from=builder /app/data ./data
+COPY --from=builder /app/data ./data
 
 EXPOSE 8000
 
