@@ -1,0 +1,26 @@
+name: バグの報告
+description: バグを報告しissueを作成
+title: "sample"
+body:
+  - type: input
+    id: main-page
+    attributes:
+      label: バグが発見されたページ
+      description: バグが見つかった画面を記述してください。
+      placeholder: 例) 名刺一覧画面
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: どのようなバグですか
+      description: どのような操作で、どのようなバグが起きた、などを記述してください。
+      placeholder: 例) 名刺を押しても画面が遷移しない。
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: どのような修正が必要ですか
+      description: 修正箇所がわかる場合は記述してください
+      placeholder: 例) 名刺コンポーネントのurlEnabledをtrueにする。
