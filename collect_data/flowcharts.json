@@ -1,0 +1,1881 @@
+[
+    {
+        "content": "# 印刷したい用紙サイズは決まっているがどの商品を選べばよいかわからない\n\n「印刷したい用紙サイズは決まっているが、どの商品を選べばよいかわからない」という方向けに、「どの商品カテゴリから選べばよいか」をご案内します。\n\nご希望の用紙サイズをクリックし、該当のページを参照してください。\n\n  \n\n **A判**\n\n[A0（841×1189mm）](https://raksul.com/guide/products-faq/category/category-a0/)\n\n[A1（594×841mm）](https://raksul.com/guide/products-faq/category/category-a1/)\n\n[A2（420×594mm）](https://raksul.com/guide/products-faq/category/category-a2/)\n\n[A3（297×420mm）](https://raksul.com/guide/products-faq/category/category-a3/)\n\n[A4（210×297mm）](https://raksul.com/guide/products-faq/category/category-a4/)\n\n[A5（148×210mm）](https://raksul.com/guide/products-faq/category/category-a5/)\n\n[A6（105×148mm）](https://raksul.com/guide/products-faq/category/category-a6/)\n\n[A7（74×105mm）](https://raksul.com/guide/products-faq/category/category-a7/)\n\n  \n\n **B判**\n\n[B0（1030×1456mm）](https://raksul.com/guide/products-faq/category/category-b0/)\n\n[B1（728×1030mm）](https://raksul.com/guide/products-faq/category/category-b1/)\n\n[B2（515×728mm）](https://raksul.com/guide/products-faq/category/category-b2/)\n\n[B3（364×515mm）](https://raksul.com/guide/products-faq/category/category-b3/)\n\n[B4（257×364mm）](https://raksul.com/guide/products-faq/category/category-b4/)\n\n[B5（182×257mm）](https://raksul.com/guide/products-faq/category/category-b5/)\n\n[B6（128×182mm）](https://raksul.com/guide/products-faq/category/category-b6/)\n\n[B7（91×128mm）](https://raksul.com/guide/products-faq/category/category-b7/)\n\n[B8（64×91mm）](https://raksul.com/guide/products-faq/category/category-b8/)\n\n  \n\n **その他**\n\n[その他のサイズ](https://raksul.com/guide/products-faq/category/category-others/)\n\n",
+        "flowchart": {
+            "nodes": [
+                {
+                    "id": "1",
+                    "type": "input",
+                    "data": {
+                        "label": "印刷したい用紙サイズは何ですか？"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 25
+                    }
+                },
+                {
+                    "id": "2",
+                    "data": {
+                        "label": "A判"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 150
+                    }
+                },
+                {
+                    "id": "3",
+                    "data": {
+                        "label": "B判"
+                    },
+                    "position": {
+                        "x": 300,
+                        "y": 150
+                    }
+                },
+                {
+                    "id": "4",
+                    "data": {
+                        "label": "その他"
+                    },
+                    "position": {
+                        "x": 500,
+                        "y": 150
+                    }
+                },
+                {
+                    "id": "5",
+                    "data": {
+                        "label": "A0 (841×1189mm)"
+                    },
+                    "position": {
+                        "x": 50,
+                        "y": 275
+                    }
+                },
+                {
+                    "id": "6",
+                    "data": {
+                        "label": "A1 (594×841mm)"
+                    },
+                    "position": {
+                        "x": 150,
+                        "y": 275
+                    }
+                },
+                {
+                    "id": "7",
+                    "data": {
+                        "label": "A2 (420×594mm)"
+                    },
+                    "position": {
+                        "x": 250,
+                        "y": 275
+                    }
+                },
+                {
+                    "id": "8",
+                    "data": {
+                        "label": "A3 (297×420mm)"
+                    },
+                    "position": {
+                        "x": 350,
+                        "y": 275
+                    }
+                },
+                {
+                    "id": "9",
+                    "data": {
+                        "label": "A4 (210×297mm)"
+                    },
+                    "position": {
+                        "x": 450,
+                        "y": 275
+                    }
+                },
+                {
+                    "id": "10",
+                    "data": {
+                        "label": "A5 (148×210mm)"
+                    },
+                    "position": {
+                        "x": 550,
+                        "y": 275
+                    }
+                },
+                {
+                    "id": "11",
+                    "data": {
+                        "label": "A6 (105×148mm)"
+                    },
+                    "position": {
+                        "x": 650,
+                        "y": 275
+                    }
+                },
+                {
+                    "id": "12",
+                    "data": {
+                        "label": "A7 (74×105mm)"
+                    },
+                    "position": {
+                        "x": 750,
+                        "y": 275
+                    }
+                },
+                {
+                    "id": "13",
+                    "data": {
+                        "label": "B0 (1030×1456mm)"
+                    },
+                    "position": {
+                        "x": 50,
+                        "y": 400
+                    }
+                },
+                {
+                    "id": "14",
+                    "data": {
+                        "label": "B1 (728×1030mm)"
+                    },
+                    "position": {
+                        "x": 150,
+                        "y": 400
+                    }
+                },
+                {
+                    "id": "15",
+                    "data": {
+                        "label": "B2 (515×728mm)"
+                    },
+                    "position": {
+                        "x": 250,
+                        "y": 400
+                    }
+                },
+                {
+                    "id": "16",
+                    "data": {
+                        "label": "B3 (364×515mm)"
+                    },
+                    "position": {
+                        "x": 350,
+                        "y": 400
+                    }
+                },
+                {
+                    "id": "17",
+                    "data": {
+                        "label": "B4 (257×364mm)"
+                    },
+                    "position": {
+                        "x": 450,
+                        "y": 400
+                    }
+                },
+                {
+                    "id": "18",
+                    "data": {
+                        "label": "B5 (182×257mm)"
+                    },
+                    "position": {
+                        "x": 550,
+                        "y": 400
+                    }
+                },
+                {
+                    "id": "19",
+                    "data": {
+                        "label": "B6 (128×182mm)"
+                    },
+                    "position": {
+                        "x": 650,
+                        "y": 400
+                    }
+                },
+                {
+                    "id": "20",
+                    "data": {
+                        "label": "B7 (91×128mm)"
+                    },
+                    "position": {
+                        "x": 750,
+                        "y": 400
+                    }
+                },
+                {
+                    "id": "21",
+                    "data": {
+                        "label": "B8 (64×91mm)"
+                    },
+                    "position": {
+                        "x": 850,
+                        "y": 400
+                    }
+                },
+                {
+                    "id": "22",
+                    "data": {
+                        "label": "別のサイズ"
+                    },
+                    "position": {
+                        "x": 550,
+                        "y": 150
+                    }
+                }
+            ],
+            "edges": [
+                {
+                    "id": "e1-2",
+                    "source": "1",
+                    "target": "2",
+                    "type": "straight",
+                    "animated": true
+                },
+                {
+                    "id": "e1-3",
+                    "source": "1",
+                    "target": "3",
+                    "type": "straight",
+                    "animated": true
+                },
+                {
+                    "id": "e1-4",
+                    "source": "1",
+                    "target": "4",
+                    "type": "straight",
+                    "animated": true
+                },
+                {
+                    "id": "e2-5",
+                    "source": "2",
+                    "target": "5",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e2-6",
+                    "source": "2",
+                    "target": "6",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e2-7",
+                    "source": "2",
+                    "target": "7",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e2-8",
+                    "source": "2",
+                    "target": "8",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e2-9",
+                    "source": "2",
+                    "target": "9",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e2-10",
+                    "source": "2",
+                    "target": "10",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e2-11",
+                    "source": "2",
+                    "target": "11",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e2-12",
+                    "source": "2",
+                    "target": "12",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e3-13",
+                    "source": "3",
+                    "target": "13",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e3-14",
+                    "source": "3",
+                    "target": "14",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e3-15",
+                    "source": "3",
+                    "target": "15",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e3-16",
+                    "source": "3",
+                    "target": "16",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e3-17",
+                    "source": "3",
+                    "target": "17",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e3-18",
+                    "source": "3",
+                    "target": "18",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e3-19",
+                    "source": "3",
+                    "target": "19",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e3-20",
+                    "source": "3",
+                    "target": "20",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e3-21",
+                    "source": "3",
+                    "target": "21",
+                    "type": "straight",
+                    "animated": false
+                },
+                {
+                    "id": "e1-22",
+                    "source": "1",
+                    "target": "22",
+                    "type": "straight",
+                    "animated": true
+                }
+            ]
+        },
+        "link": "https://helpfeel.com/raksul/%E5%8D%B0%E5%88%B7%E3%81%97%E3%81%9F%E3%81%84%E7%94%A8%E7%B4%99%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AF%E6%B1%BA%E3%81%BE%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%81%8C%E3%81%A9%E3%81%AE%E5%95%86%E5%93%81%E3%82%92%E9%81%B8%E3%81%B9%E3%81%B0%E3%82%88%E3%81%84%E3%81%8B%E3%82%8F%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84-62625ced141b610023e2cf72",
+        "questions": [
+            "「 A4 」のサイズで注文したいが、どの商品を選べばよいかわからない",
+            "印刷したい用紙 サイズ は決まっているがどの商品を注文すればよいかわからない",
+            "印刷したい用紙サイズは決まっているがどの 商品 を選べばよいかわからない",
+            "印刷したい用紙サイズは決まっているがどの商品を選べばよいかわからない",
+            "印刷したい 用紙 サイズは決まっているがどの商品を注文すればよいかわからない"
+        ],
+        "id": 0
+    },
+    {
+        "content": "# オリジナルサイズ（変型）のチラシ・フライヤー 注文操作ガイド\n\nこのページでは、[チラシ](./%E3%83%81%E3%83%A9%E3%82%B7)・[フライヤー](./%E3%83%95%E3%83%A9%E3%82%A4%E3%83%A4%E3%83%BC)のオリジナルサイズの注文の操作方法を解説します。\n\n  \n\n **規格外サイズの紙への印刷は、チラシ・フライヤー印刷からご注文いただけます。**\n\n **ご注文の際は、用紙の種類・厚さにご注意ください。**\n\n  \n\n  \n\n **１．トップページからチラシ・フライヤー印刷を選択**\n\n![](https://gyazo.com/bba3cc8e4e8782890a4a1d032863f7c5/thumb/1000)\n\n  \n\n  \n\nトップページ左側から[チラシ・フライヤー印刷](https://raksul.com/flyer/)をクリックしてください。\n\n  \n\n **2.サイズを選択**\n\n![](https://gyazo.com/71567cf85c331ec3aa96ff0369de34ae/thumb/1000)\n\n  \n\n  \n\n **※次の画面でご希望のサイズを入力いただけますので、選択いただくサイズはどちらでも問題ございません。**\n\n  \n\n **3．ご希望の用紙サイズを入力**\n\n![](https://gyazo.com/1d5c12d8affdee84c840a0f3ddfeb489/thumb/1000)\n\n  \n\n左側メニューバーから［用紙サイズ］のタブをクリックしてください。\n\n![](https://gyazo.com/e7b6365aad328761e9857c601009cd88/thumb/1000)\n\n  \n\n［用紙サイズ］をクリックいただくと別窓が表示されるので、［上記以外のサイズ］からご希望のサイズをご設定ください。\n\n※ 45 x 45mm 〜 297 x 420mm の範囲で大きさを指定してください。\n\n※ 短辺、長辺のどちらかが 140mm 未満の場合、折り加工オプションがつけられません。\n\n※ご注文いただけないサイズ・仕様をご希望の場合は、[見積もり・特注品サービス](https://estimate.raksul.com/)をご検討ください。\n\n  \n\n **4．印刷仕様と出荷日を選択**\n\n![](https://gyazo.com/02a0dac68dc232d3526378d7c3e87f50/thumb/1000)\n\n  \n\n用紙のサイズ、種類、厚さ\n\n両面or片面、カラーorモノクロ\n\n用紙の加工\n\n以上を選択いただきます。\n\n選択内容に応じて料金が変わりますので、よくご確認ください。※用紙の選び方、加工などの商品については、[こちら](https://dev.raksul.com/guide/products-\nfaq/flyer/?_ga=2.26481278.2137813303.1624253817-2092769093.1623292778&_gac=1.215274981.1624354141.Cj0KCQjwlMaGBhD3ARIsAPvWd6hJjyWHFGK0Z_rH5n59G4dULFp8KvaiRBAuo7u-89hVIzphqSI1mW4aApwrEALw_wcB)をご覧ください。\n\n  \n\n部数\n\n出荷日\n\nは、右側の表からもお選びいただけます。\n\n選択した部数・出荷日は青く表示されます。「○営業日後」は「受付確定日から出荷まで」の日数です。\n\n※[受付日](./%E5%8F%97%E4%BB%98%E6%97%A5)確定についてご不明な点がある場合は、[お届けまでの日数、納期ガイド](./%E3%81%8A%E5%B1%8A%E3%81%91%E3%81%BE%E3%81%A7%E3%81%AE%E6%97%A5%E6%95%B0%E3%80%81%E7%B4%8D%E6%9C%9F%E3%82%AC%E3%82%A4%E3%83%89-60f55151effc3b001cad9625)の「①受付日確定の条件」をご覧ください。\n\n  \n\n  \n\n **5．購入手続きへ進む**\n\n  \n\n![](https://gyazo.com/86bb12158d71377d458126f37dc0b07f/thumb/1000)\n\n仕様に間違いがないか確認したら、「購入手続きへ進む」を選択してください。\n\n[見積書](./%E8%A6%8B%E7%A9%8D%E6%9B%B8)の発行が必要な場合には、「カートに追加する」を選択してください。カートに追加後の操作方法については[注文の操作方法ガイド](./%E6%B3%A8%E6%96%87%E3%81%AE%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95%E3%82%AC%E3%82%A4%E3%83%89-60f55151effc3b001cad964c)の「４．カートに入れて、購入手続きへ進む」をご確認ください。\n\n  \n\n![](https://gyazo.com/e64a9be19b9da5efac47097b01ac7d6c/thumb/1000)\n\n※「カートに追加する」を押した後、用紙サイズでご希望のサイズが反映されているかご確認ください。\n\n※先に購入手続きを進めたい場合は「[後から入稿](./%E5%BE%8C%E3%81%8B%E3%82%89%E5%85%A5%E7%A8%BF)する」にチェックを入れ、「７．お支払方法、お届け先、お届け予定日の入力」に進んでください。\n\n  \n\n  \n\n **6．データをアップロードする**\n\n  \n\n![](https://gyazo.com/bea267c09dd28c4eaa0a47794d21e0bc/thumb/1000)\n\nポップアップの内容を確認し、「オペレーターチェックへ進む」を選択してください。\n\n  \n\n![](https://gyazo.com/4fd86a850bcd63c14e09623f43a548e9/thumb/1000)\n\n上の画面が表示されます。各項目については下記をご覧ください。\n\n  \n\n![](https://gyazo.com/4e49416c018f97f947f5d20e2fb15c4e/thumb/1000)\n\n **【入稿データ】**\n\nご入稿データの形式をプルダウンから選択してください。\n\n  \n\n![](https://gyazo.com/6fb020e0b28317a0d1072c33ec40727a/thumb/1000)\n\n **【データチェックお急ぎ便】**\n\nお急ぎ便を追加する場合は、チェックボックスにチェックを入れてください。※お急ぎ便については[こちら](https://raksul.com/guide/submit-\ndata/speed-check/)をご覧ください。\n\n  \n\n![](https://gyazo.com/fc7032c89438834a5ee15a1a32326d49/thumb/1000)\n\n **【オプション】**\n\nオプションの指定ができるのは **チラシ・フライヤーのみ**\nとなります。文字・デザイン切れ、塗り足し不足、データの拡大・縮小についてのデータチェック結果の指摘が不要の場合はそれぞれのチェックボックスにチェックを入れてください。※断裁ずれや塗り足しについては[こちら](https://raksul.com/guide/create-\ndata/knowledge-of-printing/extra-length-from-trim-mask/)をご覧ください。\n\n  \n\n![](https://gyazo.com/4790449108f8bd21c29c27f4b69c316f/thumb/1000)\n\n **【PDF確認】**\n\nすでにチェックが入った状態になっておりますので、PDF確認が不要な場合はそのまま進行してください。\n\nPDFで仕上がりを確認したり、データチェック結果を確認したい場合は、チェックボックスのチェックを外してください。※データに不備があった際はメールで最終確認を依頼する場合があります。\n\n  \n\n![](https://gyazo.com/86adc4a3ca5c970648b6b51c8ad61cfd/thumb/1000)\n\n **【データチェックに関するコメント】（任意）**\n\nデータチェックに関するご希望がある場合はこちらにご記入ください。※コメントの入力は任意になります。\n\n※コメントを入力された場合、「PDF確認なし」でもデータチェック結果をお送りすることがございます。\n\n  \n\n![](https://gyazo.com/88a15d31cf57d3023200666e506799b0/thumb/1000)\n\n入力が完了したら、右下の「オペレーターチェックで入稿する」を選択してください。\n\n  \n\n![](https://gyazo.com/4ae8f575ace65798989582a44aca3f70/thumb/1000)\n\nカートに戻ります。オペレーターチェック入稿で入稿した注文は左のように表示されます。\n\n  \n\n **７．お支払方法、お届け先、お届け予定日の入力**\n\n  \n\n![](https://gyazo.com/a3a216d6ebcaf19c65838082115d0872/thumb/1000)\n\nデータの入稿（または「後から入稿する」の選択）が完了した後「支払い、お届け先入力へ進む」を選択してください。\n\n  \n\n![](https://gyazo.com/6cc9a3e65777ff70206aa99219a1e411/thumb/1000)\n\n  \n\n次の画面で、以下の項目を選択・入力してください。\n\n・「支払い方法」\n\n・「クーポン・ポイント」（任意）\n\n・「配送方法」（名刺の場合）\n\n・「お届け先」\n\n・「出荷元」\n\n  \n\n **チラシ・フライヤー印刷は「お届け予定日」の選択が可能です**\n\n![](https://raksul.com/guide/wp-\ncontent/uploads/2021/09/5ba897d6d697425ab4b38f14e988b482-9-768x361.png)\n\nご希望のお届け予定日を選択ください。\n\n※ご対応できない地域もございます。あらかじめご了承ください。\n\n  \n\n選択後、「ご注文を確定する」を選択しお進みください。\n\n  \n\n **８．ご購入の完了**\n\n  \n\n![](https://gyazo.com/f1d73db9fab1847458b19a0045a974eb/thumb/1000)\n\nご注文が完了します。ご入稿済みのデータはラクスルで入稿データのチェックを行います。\n\n万が一データに不備があった場合は、メールでご連絡させていただきます。データをアップロードせず、「後から入稿する」にチェックを入れた場合には、続けてデータのご入稿をお願いいたします。\n\nデータ入稿については[入稿の操作方法ガイド（オペレーターチェック入稿）](https://raksul.com/guide/submit-\ndata/operator-check/)をご覧ください。\n\n",
+        "flowchart": [
+            {
+                "id": "1",
+                "type": "input",
+                "data": {
+                    "label": "トップページからチラシ・フライヤー印刷を選択"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 25
+                }
+            },
+            {
+                "id": "2",
+                "type": "default",
+                "data": {
+                    "label": "サイズを選択（任意のサイズ可）"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 125
+                },
+                "style": {
+                    "background": "#D6D5A8",
+                    "color": "#333",
+                    "border": "1px solid #222138",
+                    "width": 180
+                }
+            },
+            {
+                "id": "3",
+                "type": "default",
+                "data": {
+                    "label": "ご希望の用紙サイズを入力"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 225
+                }
+            },
+            {
+                "id": "4",
+                "type": "default",
+                "data": {
+                    "label": "印刷仕様と出荷日を選択"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 325
+                }
+            },
+            {
+                "id": "5",
+                "type": "default",
+                "data": {
+                    "label": "購入手続きへ進む"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 425
+                }
+            },
+            {
+                "id": "5a",
+                "type": "default",
+                "data": {
+                    "label": "カートに追加する（見積り必要時）"
+                },
+                "position": {
+                    "x": 50,
+                    "y": 525
+                },
+                "style": {
+                    "background": "#B7D7D8",
+                    "color": "#333",
+                    "border": "1px solid #222138",
+                    "width": 180
+                }
+            },
+            {
+                "id": "5b",
+                "type": "default",
+                "data": {
+                    "label": "データをアップロードする"
+                },
+                "position": {
+                    "x": 450,
+                    "y": 525
+                }
+            },
+            {
+                "id": "6",
+                "type": "default",
+                "data": {
+                    "label": "お支払方法、お届け先、お届け予定日の入力"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 625
+                }
+            },
+            {
+                "id": "7",
+                "type": "output",
+                "data": {
+                    "label": "ご購入の完了"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 725
+                }
+            },
+            {
+                "source": "1",
+                "target": "2",
+                "id": "e1-2",
+                "arrowHeadType": "arrowclosed",
+                "type": "smoothstep"
+            },
+            {
+                "source": "2",
+                "target": "3",
+                "id": "e2-3",
+                "arrowHeadType": "arrowclosed",
+                "type": "smoothstep"
+            },
+            {
+                "source": "3",
+                "target": "4",
+                "id": "e3-4",
+                "arrowHeadType": "arrowclosed",
+                "type": "smoothstep"
+            },
+            {
+                "source": "4",
+                "target": "5",
+                "id": "e4-5",
+                "arrowHeadType": "arrowclosed",
+                "type": "smoothstep"
+            },
+            {
+                "source": "5",
+                "target": "5a",
+                "id": "e5-5a",
+                "arrowHeadType": "arrowclosed",
+                "type": "smoothstep",
+                "style": {
+                    "stroke": "#FF7474",
+                    "strokeWidth": 2
+                }
+            },
+            {
+                "source": "5",
+                "target": "5b",
+                "id": "e5-5b",
+                "arrowHeadType": "arrowclosed",
+                "type": "smoothstep",
+                "style": {
+                    "stroke": "#74C1ED",
+                    "strokeWidth": 2
+                }
+            },
+            {
+                "source": "5a",
+                "target": "6",
+                "id": "e5a-6",
+                "arrowHeadType": "arrowclosed",
+                "type": "smoothstep",
+                "style": {
+                    "stroke": "#FF7474",
+                    "strokeWidth": 2
+                }
+            },
+            {
+                "source": "5b",
+                "target": "6",
+                "id": "e5b-6",
+                "arrowHeadType": "arrowclosed",
+                "type": "smoothstep",
+                "style": {
+                    "stroke": "#74C1ED",
+                    "strokeWidth": 2
+                }
+            },
+            {
+                "source": "6",
+                "target": "7",
+                "id": "e6-7",
+                "arrowHeadType": "arrowclosed",
+                "type": "smoothstep"
+            }
+        ],
+        "link": "https://helpfeel.com/raksul/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E3%82%B5%E3%82%A4%E3%82%BA%EF%BC%88%E5%A4%89%E5%9E%8B%EF%BC%89%E3%81%AE%E3%83%81%E3%83%A9%E3%82%B7%E3%83%BB%E3%83%95%E3%83%A9%E3%82%A4%E3%83%A4%E3%83%BC%E3%80%80%E6%B3%A8%E6%96%87%E6%93%8D%E4%BD%9C%E3%82%AC%E3%82%A4%E3%83%89-60f55150effc3b001cad95c1",
+        "questions": [
+            "A4 変型サイズのチラシを注文する方法は？",
+            "変形サイズの 折り パンフレット注文操作ガイド",
+            "変形サイズの カード 注文操作ガイド",
+            "変型サイズのチラシ印刷を注文する場合、印刷 仕様 を選択する方法は？",
+            "変型サイズの チラシ 印刷を注文したい",
+            "変形サイズの はがき 注文操作ガイド",
+            "変型サイズの折り パンフレット 注文操作ガイド",
+            "変型サイズのチラシ印刷を注文する場合、印刷 部数 を指定する方法は？",
+            "変形サイズ の印刷物を注文したい"
+        ],
+        "id": 1
+    },
+    {
+        "content": "# 仕上がりサイズ\n\n日本で主に使用されている用紙のサイズは、 JIS工業規格に基づいた「 A判 」「B判\n」の二種類です。A判はドイツの規格を採用しているため国際規格ですが、B判は江戸時代の公用紙、美濃紙を基準にしているため、日本国内の規格になっています。\n\n  \n\n  \n\n **JIS工業規格(A/B)のサイズ表**\n\n  \n\nこの規格以外のサイズも、チラシ印刷でのサイズの変形で指定いただくことで、ご注文いただくことができます。\n\n  \n\n **A判のサイズ**\n\n  \n\n![](https://raksul.com/guide/wp-\ncontent/uploads/2016/04/160308_tokushu_lp_05-e1464612857994.png)\n\nA0 841×1189\n\nA1 594×841\n\nA2 420×594\n\nA3 297×420\n\nA4 210×297\n\nA5 148×210\n\nA6 105×148\n\nA7 74×105\n\n  \n\n各種ページ設定は本ページの「各種ページ設定」をご覧ください。\n\n  \n\n **B判のサイズ**\n\n![](https://raksul.com/guide/wp-\ncontent/uploads/2016/04/160308_tokushu_lp_06-e1464613076164.png)\n\nB0 1030×1456\n\nB1 728×1030\n\nB2 515×728\n\nB3 364×515\n\nB4 257×364\n\nB5 182×257\n\nB6 128×182\n\nB7 91×128\n\nB8 64×91\n\n  \n\n各種ページ設定は本ページの「各種ページ設定」をご覧ください。\n\n  \n\n  \n\n **名刺、カード、ポストカード／はがき、封筒のサイズ**\n\n![](https://raksul.com/guide/wp-\ncontent/uploads/2016/04/160308_tokushu_lp_07-e1464613334268.png)\n\n商品名| サイズ  \n---|---  \n名刺各サイズ| 通常91×55、欧米89×51、小型85×49  \nカード各サイズ| 名刺サイズ91×55、小型名刺サイズ85×49、クレジットカードサイズ85×54  \nポストカード／はがき| 100×148  \n大判はがき| 大判はがき120×235、A4大判はがき210×297  \n長3封筒| 120×235  \n角2封筒| 240×332  \n洋長3封筒| 235×120  \n  \n  \n\n  \n\n **各種ページ設定**\n\n  \n\n[サイズ設定：Illustrator](./%E3%82%B5%E3%82%A4%E3%82%BA%E8%A8%AD%E5%AE%9A%EF%BC%9AIllustrator-60f5514feffc3b001cad9528)\n\n[サイズ設定：Photoshop](./%E3%82%B5%E3%82%A4%E3%82%BA%E8%A8%AD%E5%AE%9A%EF%BC%9APhotoshop-60f55155effc3b001cad9888)\n\n[ページ設定：Word](./%E3%83%9A%E3%83%BC%E3%82%B8%E8%A8%AD%E5%AE%9A%EF%BC%9AWord-60f55154effc3b001cad981e)\n\n[ページ設定：PowerPoint](./%E3%83%9A%E3%83%BC%E3%82%B8%E8%A8%AD%E5%AE%9A%EF%BC%9APowerPoint-60f55153effc3b001cad97b8)\n\n",
+        "flowchart": {
+            "nodes": [
+                {
+                    "id": "1",
+                    "type": "default",
+                    "data": {
+                        "label": "用紙のサイズ"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 25
+                    }
+                },
+                {
+                    "id": "2",
+                    "type": "default",
+                    "data": {
+                        "label": "JIS工業規格"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 100
+                    }
+                },
+                {
+                    "id": "3",
+                    "type": "default",
+                    "data": {
+                        "label": "A判"
+                    },
+                    "position": {
+                        "x": 50,
+                        "y": 175
+                    }
+                },
+                {
+                    "id": "4",
+                    "type": "default",
+                    "data": {
+                        "label": "B判"
+                    },
+                    "position": {
+                        "x": 250,
+                        "y": 175
+                    }
+                },
+                {
+                    "id": "5",
+                    "type": "default",
+                    "data": {
+                        "label": "特殊サイズ"
+                    },
+                    "position": {
+                        "x": 400,
+                        "y": 100
+                    }
+                },
+                {
+                    "id": "6",
+                    "type": "default",
+                    "data": {
+                        "label": "名刺、カード等"
+                    },
+                    "position": {
+                        "x": 400,
+                        "y": 175
+                    }
+                }
+            ],
+            "edges": [
+                {
+                    "id": "e1-2",
+                    "source": "1",
+                    "target": "2",
+                    "type": "straight",
+                    "animated": true
+                },
+                {
+                    "id": "e2-3",
+                    "source": "2",
+                    "target": "3",
+                    "type": "straight",
+                    "animated": true
+                },
+                {
+                    "id": "e2-4",
+                    "source": "2",
+                    "target": "4",
+                    "type": "straight",
+                    "animated": true
+                },
+                {
+                    "id": "e1-5",
+                    "source": "1",
+                    "target": "5",
+                    "type": "straight",
+                    "animated": true
+                },
+                {
+                    "id": "e5-6",
+                    "source": "5",
+                    "target": "6",
+                    "type": "straight",
+                    "animated": true
+                }
+            ]
+        },
+        "link": "https://helpfeel.com/raksul/%E4%BB%95%E4%B8%8A%E3%81%8C%E3%82%8A%E3%82%B5%E3%82%A4%E3%82%BA-60f5514feffc3b001cad956a",
+        "questions": [
+            "A4 大判はがきはどのくらいのサイズですか？",
+            "対応している カード のサイズが知りたい",
+            "カード印刷では クレジットカード サイズの印刷に対応していますか？",
+            "大判 はがき はどのくらいのサイズですか？",
+            "対応している 名刺 のサイズが知りたい"
+        ],
+        "id": 2
+    },
+    {
+        "content": "# 封筒に入る用紙のサイズを教えてください\n\nラクスルで購入できる[封筒](./%E5%B0%81%E7%AD%92)のサイズは以下の3つです。\n\n  \n\n**角形２号：** A4用紙がそのまま入ります。\n\n**角形２０号：** A4用紙がそのまま入ります。\n\n（角20は角2に比べ少し小さいため、厚さのない印刷物を入れる場合にオススメです）\n\n**長形３号：** A4用紙を三つ折りにしたものが入ります。(縦向き)\n\n**洋長３号：** A4用紙を三つ折りにしたものが入ります。(横向き)\n\n  \n\n![](https://raksul.com/guide/wp-\ncontent/uploads/2020/06/51e6ead0aba925798a95fbdb4fc15122.png)\n\n  \n\n※上記以外のサイズの封筒は、取り扱いがございません。\n\n",
+        "flowchart": {
+            "nodes": [
+                {
+                    "id": "1",
+                    "type": "input",
+                    "data": {
+                        "label": "封筒のサイズ選択"
+                    },
+                    "position": {
+                        "x": 250,
+                        "y": 25
+                    }
+                },
+                {
+                    "id": "2",
+                    "type": "default",
+                    "data": {
+                        "label": "角形２号\nA4用紙がそのまま入る"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 100
+                    }
+                },
+                {
+                    "id": "3",
+                    "type": "default",
+                    "data": {
+                        "label": "角形２０号\nA4が入る(少し小さい)"
+                    },
+                    "position": {
+                        "x": 400,
+                        "y": 100
+                    }
+                },
+                {
+                    "id": "4",
+                    "type": "default",
+                    "data": {
+                        "label": "長形３号\nA4を三つ折り(縦向き)"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 200
+                    }
+                },
+                {
+                    "id": "5",
+                    "type": "default",
+                    "data": {
+                        "label": "洋長３号\nA4を三つ折り(横向き)"
+                    },
+                    "position": {
+                        "x": 400,
+                        "y": 200
+                    }
+                },
+                {
+                    "id": "6",
+                    "type": "output",
+                    "data": {
+                        "label": "選択終了"
+                    },
+                    "position": {
+                        "x": 250,
+                        "y": 300
+                    }
+                }
+            ],
+            "edges": [
+                {
+                    "id": "e1-2",
+                    "source": "1",
+                    "target": "2",
+                    "type": "smoothstep",
+                    "animated": false
+                },
+                {
+                    "id": "e1-3",
+                    "source": "1",
+                    "target": "3",
+                    "type": "smoothstep",
+                    "animated": false
+                },
+                {
+                    "id": "e2-4",
+                    "source": "2",
+                    "target": "4",
+                    "type": "smoothstep",
+                    "animated": false
+                },
+                {
+                    "id": "e3-5",
+                    "source": "3",
+                    "target": "5",
+                    "type": "smoothstep",
+                    "animated": false
+                },
+                {
+                    "id": "e4-6",
+                    "source": "4",
+                    "target": "6",
+                    "type": "smoothstep",
+                    "animated": false
+                },
+                {
+                    "id": "e5-6",
+                    "source": "5",
+                    "target": "6",
+                    "type": "smoothstep",
+                    "animated": false
+                }
+            ]
+        },
+        "link": "https://helpfeel.com/raksul/%E5%B0%81%E7%AD%92%E3%81%AB%E5%85%A5%E3%82%8B%E7%94%A8%E7%B4%99%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84-60f5514deffc3b001cad945c",
+        "questions": [
+            "A4 用紙がそのまま入る封筒はどれですか？",
+            "A4用紙が 折ら ずに入る封筒はどれですか？"
+        ],
+        "id": 3
+    },
+    {
+        "content": "# ページ設定：PowerPoint\n\n本ページでは、[PowerPoint](./PowerPoint)でのページサイズ設定方法を説明します。\n\n  \n\n **スライドサイズ設定方法**\n\n  \n\n **１、ページ設定を開く**\n\n2003以前のバージョン：「ファイル」より、「ページ設定」を開いてください。\n\n2007/2010のバージョン：「デザイン」より、「ページ設定」を開いてください。\n\n  \n\n **２、スライドサイズを設定する**\n\nスライドのサイズ指定を「 **ユーザー設定** 」してください。\n\n「幅」「高さ」に **塗り足しを含んだ用紙サイズ** を入力してください。塗り足しを含んだ用紙サイズについては\n[塗り足しサイズ・文字切れ範囲について](./%E5%A1%97%E3%82%8A%E8%B6%B3%E3%81%97%E3%82%B5%E3%82%A4%E3%82%BA%E3%83%BB%E6%96%87%E5%AD%97%E5%88%87%E3%82%8C%E7%AF%84%E5%9B%B2%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-60f55155effc3b001cad98f0)\nをご確認ください\n\n  \n\n※スライドサイズは「A4」などの規定サイズは選択しないでください。\n\n![](https://raksul.com/guide/wp-content/uploads/2016/05/office_pp_43-1.jpg)\n\nスライドサイズの「A4\n210×297mm」を選択すると、幅27.51cm×高さ19.05cmと設定されてしまいます。実際のA4のサイズ（210mm×297mm）とは全く異なっており、仕上りに余白ができてしまいます。\n\n  \n\n※Microsoft\nOffice社のソフト（[Word](./Word)・[PowerPoint](./PowerPoint)）では「[トンボ](./%E3%83%88%E3%83%B3%E3%83%9C)」は付けられません。データチェック時にトンボを付けますので、トンボのないデータを入稿してください。\n\n  \n\n  \n\n **デザイン時の注意点**\n\n[フチなし印刷](./%E3%83%95%E3%83%81%E3%81%AA%E3%81%97%E5%8D%B0%E5%88%B7)にしたい場合、背景の色や画像は必ずスライドの端まで広げて配置してください。\n\nまた、断裁の切れてしまって困る文字や画像は、作成したスライドの端から6mm以上内側に配置してください。\n\n![](https://raksul.com/guide/wp-content/uploads/2016/05/office04-1.jpg)\n\n",
+        "flowchart": [
+            {
+                "id": "1",
+                "type": "default",
+                "data": {
+                    "label": "ページ設定のスライドサイズ設定方法"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 25
+                }
+            },
+            {
+                "id": "2",
+                "type": "default",
+                "data": {
+                    "label": "１、ページ設定を開く"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 100
+                }
+            },
+            {
+                "id": "2a",
+                "type": "default",
+                "data": {
+                    "label": "2003以前: 「ファイル」>「ページ設定」"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 175
+                }
+            },
+            {
+                "id": "2b",
+                "type": "default",
+                "data": {
+                    "label": "2007/2010: 「デザイン」>「ページ設定」"
+                },
+                "position": {
+                    "x": 200,
+                    "y": 175
+                }
+            },
+            {
+                "id": "3",
+                "type": "default",
+                "data": {
+                    "label": "２、スライドサイズを設定する"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 250
+                }
+            },
+            {
+                "id": "3a",
+                "type": "default",
+                "data": {
+                    "label": "サイズを「ユーザー設定」にし、塗り足しを含んだ用紙サイズを入力"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 325
+                }
+            },
+            {
+                "id": "4",
+                "type": "default",
+                "data": {
+                    "label": "デザイン時の注意点"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 400
+                }
+            },
+            {
+                "id": "4a",
+                "type": "default",
+                "data": {
+                    "label": "フチなし印刷: 背景や画像を端まで広げて配置"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 475
+                }
+            },
+            {
+                "id": "4b",
+                "type": "default",
+                "data": {
+                    "label": "重要な文字や画像は端から6mm以上内側に配置"
+                },
+                "position": {
+                    "x": 200,
+                    "y": 475
+                }
+            },
+            {
+                "id": "e1-2",
+                "source": "1",
+                "target": "2",
+                "type": "straight",
+                "animated": false
+            },
+            {
+                "id": "e2-2a",
+                "source": "2",
+                "target": "2a",
+                "type": "straight",
+                "animated": false
+            },
+            {
+                "id": "e2-2b",
+                "source": "2",
+                "target": "2b",
+                "type": "straight",
+                "animated": false
+            },
+            {
+                "id": "e2-3",
+                "source": "2",
+                "target": "3",
+                "type": "straight",
+                "animated": false
+            },
+            {
+                "id": "e3-3a",
+                "source": "3",
+                "target": "3a",
+                "type": "straight",
+                "animated": false
+            },
+            {
+                "id": "e3-4",
+                "source": "3",
+                "target": "4",
+                "type": "straight",
+                "animated": false
+            },
+            {
+                "id": "e4-4a",
+                "source": "4",
+                "target": "4a",
+                "type": "straight",
+                "animated": false
+            },
+            {
+                "id": "e4-4b",
+                "source": "4",
+                "target": "4b",
+                "type": "straight",
+                "animated": false
+            }
+        ],
+        "link": "https://helpfeel.com/raksul/%E3%83%9A%E3%83%BC%E3%82%B8%E8%A8%AD%E5%AE%9A%EF%BC%9APowerPoint-60f55153effc3b001cad97b8",
+        "questions": [
+            "PowerPointでスライドサイズを設定する場合、 A4 などの規定のサイズを指定してもいいですか？",
+            "PowerPoint でデータ作成する場合のページサイズ設定方法",
+            "PowerPointでデータ作成する場合のページ サイズ 設定方法",
+            "PowerPointで データ作成 する場合のページサイズ設定方法",
+            "PowerPointでスライドサイズを設定する場合、高さには 塗り足し を含んだサイズを入力する必要がありますか？"
+        ],
+        "id": 4
+    },
+    {
+        "content": "# 折りパンフレットと折り加工付きチラシの違いは何ですか？\n\n **「選択できる仕様」や「料金」が異なります。**\n\n※「折った状態の1枚ものの印刷物」という意味では同一です。全く同じ仕上がりとなる商品も多数ございます。\n\n  \n\n**[折り加工付きチラシ](./%E6%8A%98%E3%82%8A%E5%8A%A0%E5%B7%A5%E4%BB%98%E3%81%8D%E3%83%81%E3%83%A9%E3%82%B7)**\n\n注文時に選択するサイズ\n\n「開いた状態」でのサイズ を選択してください。\n\n※サイズ表記は[サイズ表記は\n折った状態のサイズですか？開いた状態のサイズですか？](./%E3%82%B5%E3%82%A4%E3%82%BA%E8%A1%A8%E8%A8%98%E3%81%AF_%E6%8A%98%E3%81%A3%E3%81%9F%E7%8A%B6%E6%85%8B%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%A7%E3%81%99%E3%81%8B%EF%BC%9F%E9%96%8B%E3%81%84%E3%81%9F%E7%8A%B6%E6%85%8B%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%A7%E3%81%99%E3%81%8B%EF%BC%9F-60f55153effc3b001cad9752)をご覧ください。\n\n出荷日：\n\n最短で「2」営業日後出荷\n\n背割れ防止加工：\n\n選択「不可」\n\n※背割れ防止加工については[折り加工ガイド（折りパンフレット、チラシ・フライヤー）](./%E6%8A%98%E3%82%8A%E5%8A%A0%E5%B7%A5%E3%82%AC%E3%82%A4%E3%83%89%EF%BC%88%E6%8A%98%E3%82%8A%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%88%E3%80%81%E3%83%81%E3%83%A9%E3%82%B7%E3%83%BB%E3%83%95%E3%83%A9%E3%82%A4%E3%83%A4%E3%83%BC%EF%BC%89-60f55154effc3b001cad9879)の「背割れ防止加工について」をご覧ください。\n\n選択可能な折り加工\n\n選択できる折り方が異なります。\n\n※折り加工については[どんな折り方が選べますか？](./%E3%81%A9%E3%82%93%E3%81%AA%E6%8A%98%E3%82%8A%E6%96%B9%E3%81%8C%E9%81%B8%E3%81%B9%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F-60f55154effc3b001cad9848)をご覧ください。\n\n  \n\n**[折りパンフレット](./%E6%8A%98%E3%82%8A%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%88)印刷**\n\n注文時に選択するサイズ：\n\n「折った状態」でのサイズ を選択してください。\n\n※サイズ表記は[サイズ表記は\n折った状態のサイズですか？開いた状態のサイズですか？](./%E3%82%B5%E3%82%A4%E3%82%BA%E8%A1%A8%E8%A8%98%E3%81%AF_%E6%8A%98%E3%81%A3%E3%81%9F%E7%8A%B6%E6%85%8B%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%A7%E3%81%99%E3%81%8B%EF%BC%9F%E9%96%8B%E3%81%84%E3%81%9F%E7%8A%B6%E6%85%8B%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%A7%E3%81%99%E3%81%8B%EF%BC%9F-60f55153effc3b001cad9752)をご覧ください。\n\n出荷日：\n\n最短で「1」営業日後出荷\n\n背割れ防止加工：\n\n選択「可能」\n\n※背割れ防止加工については[折り加工ガイド（折りパンフレット、チラシ・フライヤー）](./%E6%8A%98%E3%82%8A%E5%8A%A0%E5%B7%A5%E3%82%AC%E3%82%A4%E3%83%89%EF%BC%88%E6%8A%98%E3%82%8A%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%88%E3%80%81%E3%83%81%E3%83%A9%E3%82%B7%E3%83%BB%E3%83%95%E3%83%A9%E3%82%A4%E3%83%A4%E3%83%BC%EF%BC%89-60f55154effc3b001cad9879)の「背割れ防止加工について」をご覧ください。\n\n選択可能な折り加工：\n\n選択できる折り方が異なります。\n\n※折り加工については[どんな折り方が選べますか？](./%E3%81%A9%E3%82%93%E3%81%AA%E6%8A%98%E3%82%8A%E6%96%B9%E3%81%8C%E9%81%B8%E3%81%B9%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F-60f55154effc3b001cad9848)をご覧ください。\n\n  \n\n※全く同じ仕上がりの商品であっても、料金が多少異なる場合がございます。詳細は、料金表でご確認下さい。\n\n[・チラシ・フライヤー印刷の料金表](https://raksul.com/print/flyer/prices?size=A3&color=BOTH_SIDE_COLOR&paper=COAT&weight=90&amount=100&business_day=2&folding=HALF&laminate=NONE_LAMINATE&pp=NONE_PP)\n[・折りパンフレット印刷の料金表](https://raksul.com/print/pamphlet/prices?size=A4&color=BOTH_SIDE_COLOR&paper=COAT&weight=90&amount=100&business_day=2&folding=HALF&crack_prevention=CRACK_PREVENTION_OFF)\n\n",
+        "flowchart": {
+            "nodes": [
+                {
+                    "id": "1",
+                    "type": "default",
+                    "data": {
+                        "label": "選択: 折りパンフレット または 折り加工付きチラシ"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 25
+                    }
+                },
+                {
+                    "id": "2",
+                    "type": "default",
+                    "data": {
+                        "label": "注文時に選択するサイズ\n折りパンフ: 「折った状態」のサイズ\n折り加工チラシ: 「開いた状態」のサイズ"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 150
+                    }
+                },
+                {
+                    "id": "3",
+                    "type": "default",
+                    "data": {
+                        "label": "出荷日\n折りパンフ: 最短で「1」営業日後\n折り加工チラシ: 最短で「2」営業日後"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 300
+                    }
+                },
+                {
+                    "id": "4",
+                    "type": "default",
+                    "data": {
+                        "label": "背割れ防止加工\n折りパンフ: 可能\n折り加工チラシ: 不可"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 450
+                    }
+                },
+                {
+                    "id": "5",
+                    "type": "default",
+                    "data": {
+                        "label": "選択可能な折り加工\n選択できる折り方が異なります。"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 600
+                    }
+                },
+                {
+                    "id": "6",
+                    "type": "default",
+                    "data": {
+                        "label": "料金\n料金は製品によって異なります。\n詳細は料金表をご確認ください。"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 750
+                    }
+                }
+            ],
+            "edges": [
+                {
+                    "id": "e1-2",
+                    "source": "1",
+                    "target": "2",
+                    "type": "smoothstep",
+                    "animated": true
+                },
+                {
+                    "id": "e2-3",
+                    "source": "2",
+                    "target": "3",
+                    "type": "smoothstep",
+                    "animated": true
+                },
+                {
+                    "id": "e3-4",
+                    "source": "3",
+                    "target": "4",
+                    "type": "smoothstep",
+                    "animated": true
+                },
+                {
+                    "id": "e4-5",
+                    "source": "4",
+                    "target": "5",
+                    "type": "smoothstep",
+                    "animated": true
+                },
+                {
+                    "id": "e5-6",
+                    "source": "5",
+                    "target": "6",
+                    "type": "smoothstep",
+                    "animated": true
+                }
+            ]
+        },
+        "link": "https://helpfeel.com/raksul/%E6%8A%98%E3%82%8A%E3%83%91%E3%83%B3%E3%83%95%E3%83%AC%E3%83%83%E3%83%88%E3%81%A8%E6%8A%98%E3%82%8A%E5%8A%A0%E5%B7%A5%E4%BB%98%E3%81%8D%E3%83%81%E3%83%A9%E3%82%B7%E3%81%AE%E9%81%95%E3%81%84%E3%81%AF%E4%BD%95%E3%81%A7%E3%81%99%E3%81%8B%EF%BC%9F-60f55156effc3b001cad9929",
+        "questions": [
+            "A3折り加工（チラシ・フライヤー印刷）と A4 仕上がり2つ折り（折りパンフレット印刷）だと金額が大きく異なりますが、商品の出来上がりの違いはなんでしょうか？",
+            "折り パンフレットと 折り加工 付きチラシの違いは何ですか？",
+            "折りパンフレットと折り加工付きチラシではどの 仕様 が異なりますか？",
+            "折りパンフレットと折り加工付き チラシ の違いは何ですか？",
+            "折り パンフレット と折り加工付きチラシの違いは何ですか？"
+        ],
+        "id": 5
+    },
+    {
+        "content": "# データは「見開きデータ」「単ページのデータ」のどちらで作ればいいですか？（冊子印刷）\n\n **どちらでも対応可能です。**\n\n  \n\nただし、「見開きデータ」で作る場合は必ず、「ページ順」での配置をお願いします。\n\n![](https://raksul.com/guide/wp-\ncontent/uploads/2019/08/booklet_taikou4-e1566528171899.png)\n\n※やむを得ず対向面付のデータで入稿される際は、ページ順がわかるよう、必ずデータ内に[ノンブル](./%E3%83%8E%E3%83%B3%E3%83%96%E3%83%AB)を入れるかデータ入稿時のコメント欄に[面付け](./%E9%9D%A2%E4%BB%98%E3%81%91)順のご指示をお願いいたします。\n\n  \n\nその他冊子・カタログ印刷のデータ作成については[こちら](https://raksul.com/guide/create-\ndata/item/booklet/)をご覧ください。\n\n",
+        "flowchart": {
+            "nodes": [
+                {
+                    "id": "1",
+                    "type": "default",
+                    "data": {
+                        "label": "冊子印刷データ作成開始"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 25
+                    }
+                },
+                {
+                    "id": "2",
+                    "type": "default",
+                    "data": {
+                        "label": "データの種類選択\n見開きデータ or 単ページのデータ"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 125
+                    }
+                },
+                {
+                    "id": "3",
+                    "type": "default",
+                    "data": {
+                        "label": "見開きデータ\nページ順で配置"
+                    },
+                    "position": {
+                        "x": -100,
+                        "y": 250
+                    }
+                },
+                {
+                    "id": "4",
+                    "type": "default",
+                    "data": {
+                        "label": "単ページのデータ\n自由な配置"
+                    },
+                    "position": {
+                        "x": 300,
+                        "y": 250
+                    }
+                },
+                {
+                    "id": "5",
+                    "type": "default",
+                    "data": {
+                        "label": "対向面付けの入稿の場合\n・データ内ノンブル入力\n・入稿時コメントに面付け指示"
+                    },
+                    "position": {
+                        "x": -100,
+                        "y": 400
+                    }
+                },
+                {
+                    "id": "6",
+                    "type": "default",
+                    "data": {
+                        "label": "データ作成完了"
+                    },
+                    "position": {
+                        "x": 100,
+                        "y": 525
+                    }
+                }
+            ],
+            "edges": [
+                {
+                    "id": "e1-2",
+                    "source": "1",
+                    "target": "2",
+                    "type": "default",
+                    "animated": true
+                },
+                {
+                    "id": "e2-3",
+                    "source": "2",
+                    "target": "3",
+                    "type": "default",
+                    "animated": true,
+                    "label": "見開きデータ選択"
+                },
+                {
+                    "id": "e2-4",
+                    "source": "2",
+                    "target": "4",
+                    "type": "default",
+                    "animated": true,
+                    "label": "単ページデータ選択"
+                },
+                {
+                    "id": "e3-5",
+                    "source": "3",
+                    "target": "5",
+                    "type": "default",
+                    "animated": true,
+                    "label": "対向面付け入稿"
+                },
+                {
+                    "id": "e3-6",
+                    "source": "3",
+                    "target": "6",
+                    "type": "default",
+                    "animated": true,
+                    "label": "通常入稿"
+                },
+                {
+                    "id": "e4-6",
+                    "source": "4",
+                    "target": "6",
+                    "type": "default",
+                    "animated": true
+                },
+                {
+                    "id": "e5-6",
+                    "source": "5",
+                    "target": "6",
+                    "type": "default",
+                    "animated": true
+                }
+            ]
+        },
+        "link": "https://helpfeel.com/raksul/%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AF%E3%80%8C%E8%A6%8B%E9%96%8B%E3%81%8D%E3%83%87%E3%83%BC%E3%82%BF%E3%80%8D%E3%80%8C%E5%8D%98%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%80%8D%E3%81%AE%E3%81%A9%E3%81%A1%E3%82%89%E3%81%A7%E4%BD%9C%E3%82%8C%E3%81%B0%E3%81%84%E3%81%84%E3%81%A7%E3%81%99%E3%81%8B%EF%BC%9F%EF%BC%88%E5%86%8A%E5%AD%90%E5%8D%B0%E5%88%B7%EF%BC%89-60f55149effc3b001cad9277",
+        "questions": [
+            "カタログ作成時、データは A4 単ページで作成するべきですか、それとも見開きで作成するべきですか？",
+            "冊子印刷 は見開きデータでの入稿に対応していますか？"
+        ],
+        "id": 6
+    },
+    {
+        "content": "# 対応アプリケーションと入稿形式\n\n本ページでは、ラクスルでの対応アプリケーションと入稿形式について説明します。\n\nなお、入稿可能なデータの拡張子については\n[入稿可能なデータの拡張子](./%E5%85%A5%E7%A8%BF%E5%8F%AF%E8%83%BD%E3%81%AA%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E6%8B%A1%E5%BC%B5%E5%AD%90-60f55148effc3b001cad9217)\nをご確認ください。\n\n  \n\n![](https://gyazo.com/03b9ad434fabfb18568228f0b509d595/thumb/1000)\n\n  \n\n※アプリケーションの入稿前チェックリスト、データ作成ガイドは以下をご覧ください。\n\n[Illustrator](./Illustrator) イラストレーター\n\n入稿前チェックリスト：[Illustrator\nデータチェックリスト](./Illustrator_%E3%83%87%E3%83%BC%E3%82%BF%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88-60f55147effc3b001cad91dc)\n\nデータ作成ガイド：[Illustratorでの印刷データ作成方法](./Illustrator%E3%81%A7%E3%81%AE%E5%8D%B0%E5%88%B7%E3%83%87%E3%83%BC%E3%82%BF%E4%BD%9C%E6%88%90%E6%96%B9%E6%B3%95-60f55153effc3b001cad9767)\n\n[Photoshop](./Photoshop) フォトショップ\n\n入稿前チェックリスト：[Photoshop\nデータチェックリスト](./Photoshop_%E3%83%87%E3%83%BC%E3%82%BF%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88-60f5514ceffc3b001cad93cb)\n\nデータ作成ガイド：[Photoshopでのデータ作成方法](./Photoshop%E3%81%A7%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E4%BD%9C%E6%88%90%E6%96%B9%E6%B3%95-60f55153effc3b001cad976a)\n\n[InDesign](./InDesign) インデザイン\n\n入稿前チェックリスト：[InDesign\nデータチェックリスト](./InDesign_%E3%83%87%E3%83%BC%E3%82%BF%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88-60f55147effc3b001cad91e1)\n\nデータ作成ガイド：[InDesignでのデータ作成方法](./InDesign%E3%81%A7%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E4%BD%9C%E6%88%90%E6%96%B9%E6%B3%95-60f55153effc3b001cad9764)\n\n  \n\n![](https://gyazo.com/ea37301a70e6c0ce570d2c58e5bda02a/thumb/1000)\n\n  \n\n※アプリケーションの入稿前チェックリスト、データ作成ガイドは以下をご覧ください。\n\n[Word](./Word) ワード\n\n入稿前チェックリスト：[Word\nデータチェックリスト](./Word_%E3%83%87%E3%83%BC%E3%82%BF%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88-60f5514ceffc3b001cad93c5)\n\nデータ作成ガイド：[Wordでのデータ作成方法](./Word%E3%81%A7%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E4%BD%9C%E6%88%90%E6%96%B9%E6%B3%95-60f55153effc3b001cad975e)\n\n[PowerPoint](./PowerPoint) パワーポイント\n\n入稿前チェックリスト[PowerPoint\nデータチェックリスト](./PowerPoint_%E3%83%87%E3%83%BC%E3%82%BF%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%88-60f5514ceffc3b001cad93c8)\n\nデータ作成ガイド：[PowerPointでのデータ作成方法](./PowerPoint%E3%81%A7%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E4%BD%9C%E6%88%90%E6%96%B9%E6%B3%95-60f55153effc3b001cad9761)\n\n  \n\n[Excel](./Excel)、Publisher、QuarkXPressはPDFデータでの入稿のみ受け付けております。\n\nラクスルではWindows Officeは 2013 以上のバージョンでデータを開きます。2010\n以前のバージョンの場合、レイアウト崩れ等が発生する可能性が高くなります。\n\nOfficeデータはバージョンに限らずレイアウト崩れが発生する可能性がありますので、PDFでの入稿をおすすめいたします。\n\n",
+        "flowchart": [
+            {
+                "id": "1",
+                "type": "default",
+                "data": {
+                    "label": "対応アプリケーションと入稿形式"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 25
+                }
+            },
+            {
+                "id": "2",
+                "type": "default",
+                "data": {
+                    "label": "入稿前に確認すべき項目"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 125
+                },
+                "parentNode": "1",
+                "extent": "parent"
+            },
+            {
+                "id": "2a",
+                "type": "default",
+                "data": {
+                    "label": "Adobe Illustrator"
+                },
+                "position": {
+                    "x": 50,
+                    "y": 200
+                }
+            },
+            {
+                "id": "2b",
+                "type": "default",
+                "data": {
+                    "label": "Adobe Photoshop"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 200
+                }
+            },
+            {
+                "id": "2c",
+                "type": "default",
+                "data": {
+                    "label": "Adobe InDesign"
+                },
+                "position": {
+                    "x": 450,
+                    "y": 200
+                }
+            },
+            {
+                "id": "2d",
+                "type": "default",
+                "data": {
+                    "label": "Microsoft Word"
+                },
+                "position": {
+                    "x": 650,
+                    "y": 200
+                }
+            },
+            {
+                "id": "2e",
+                "type": "default",
+                "data": {
+                    "label": "Microsoft PowerPoint"
+                },
+                "position": {
+                    "x": 850,
+                    "y": 200
+                }
+            },
+            {
+                "id": "3",
+                "type": "default",
+                "data": {
+                    "label": "特記事項"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 375
+                }
+            },
+            {
+                "id": "3a",
+                "type": "default",
+                "data": {
+                    "label": "PDF入稿推奨"
+                },
+                "position": {
+                    "x": 50,
+                    "y": 450
+                }
+            },
+            {
+                "id": "3b",
+                "type": "default",
+                "data": {
+                    "label": "Windows Office 2013以上推奨"
+                },
+                "position": {
+                    "x": 350,
+                    "y": 450
+                }
+            },
+            {
+                "id": "4",
+                "type": "default",
+                "data": {
+                    "label": "PDFでの入稿受付"
+                },
+                "position": {
+                    "x": 650,
+                    "y": 450
+                },
+                "parentNode": "3",
+                "extent": "parent"
+            },
+            {
+                "id": "4a",
+                "type": "default",
+                "data": {
+                    "label": "Excel, Publisher, QuarkXPress対応"
+                },
+                "position": {
+                    "x": 650,
+                    "y": 525
+                }
+            },
+            {
+                "edge": "2-2a",
+                "source": "2",
+                "target": "2a",
+                "animated": true,
+                "label": "入稿前チェックリストとデータ作成ガイド有"
+            },
+            {
+                "edge": "2-2b",
+                "source": "2",
+                "target": "2b",
+                "animated": true,
+                "label": "入稿前チェックリストとデータ作成ガイド有"
+            },
+            {
+                "edge": "2-2c",
+                "source": "2",
+                "target": "2c",
+                "animated": true,
+                "label": "入稿前チェックリストとデータ作成ガイド有"
+            },
+            {
+                "edge": "2-2d",
+                "source": "2",
+                "target": "2d",
+                "animated": true,
+                "label": "入稿前チェックリストとデータ作成ガイド有"
+            },
+            {
+                "edge": "2-2e",
+                "source": "2",
+                "target": "2e",
+                "animated": true,
+                "label": "入稿前チェックリストとデータ作成ガイド有"
+            },
+            {
+                "edge": "3-3a",
+                "source": "3",
+                "target": "3a",
+                "animated": true,
+                "label": "推奨事項"
+            },
+            {
+                "edge": "3-3b",
+                "source": "3",
+                "target": "3b",
+                "animated": true,
+                "label": "推奨事項"
+            },
+            {
+                "edge": "4-4a",
+                "source": "4",
+                "target": "4a",
+                "animated": true,
+                "label": "対応アプリケーション"
+            }
+        ],
+        "link": "https://helpfeel.com/raksul/%E5%AF%BE%E5%BF%9C%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E5%85%A5%E7%A8%BF%E5%BD%A2%E5%BC%8F-60f55147effc3b001cad91ed",
+        "questions": [
+            "Adobe CC に対応していますか？",
+            "Illustrator で作成したデータはどのファイル形式での入稿に対応していますか？",
+            "Photoshop で作ったデータはどのファイル形式での入稿に対応していますか？",
+            "ラクスルでの入稿に対応したソフトと入稿対応ファイル形式"
+        ],
+        "id": 7
+    },
+    {
+        "content": "# CMYKカラーとRGBカラー\n\n印刷は、4色のインクを使って 、 紙 などの 媒体 に文字や絵、写真などの画像を再現します。\n印刷に使われる４色のインクは、それぞれのカラー名のスペルの最初の文字をとりCMYKと呼ばれます。\n\n  \n\n **[CMYK](./CMYK)と[RGB](./RGB)**\n\n  \n\n **CMYK カラーとは？**\n\n色の三原色C（シアン）M（マゼンタ）Y（イエロー）です。\n\n  \n\n![](https://raksul.com/guide/wp-content/uploads/2016/04/cmyk_01.png)\n\n  \n\n色の三原色は、混ぜ合わせることにより、明度を下げて色を表現していくため、減法混色と言います。\n\n色の三原色は原理的には混ぜ合わせれば完全な黒になるはずなのですが、実際には濃い茶色のような色になってしまうため、K（ブラック）インクを加えています。\n\n  \n\n **RGB カラーとは？**\n\n光の三原色、R（赤）G（緑）B（青）です。\n\n  \n\n![](https://raksul.com/guide/wp-content/uploads/2017/01/pgb_01-1-1.jpg)\n\n  \n\n光の三原色は混ぜ合わせることにより、明度を上げて色を表現していくため、加法混色と言います。\n\n光の三原色を加えていくと最終的に白になります。\n\n  \n\n色の表現出来る範囲に差があり、CMYK カラーはRGB カラーより色域が狭くなっています。そのためRGB\nカラーでデータをご入稿いただいた場合、印刷するためにCMYKカラーに変換します。仕上がりとの差が大きく出てしまう可能性が高くなります。一般的にRGB\nカラーをCMYK カラーに変換すると全体的に色味が暗く沈んだ感じになってしまいます。\n\n  \n\n![](https://raksul.com/guide/wp-content/uploads/2016/04/color1.jpg)\n\n  \n\n  \n\n **CMYKに対応したアプリケーション**\n\n  \n\nAdobe社の「[Illustrator](./Illustrator)（イラストレーター）」「[Photoshop](./Photoshop)（フォトショップ）」「[InDesign](./InDesign)（インデザイン）」は、CMYK[カラーモード](./%E3%82%AB%E3%83%A9%E3%83%BC%E3%83%A2%E3%83%BC%E3%83%89)が設定でき、印刷用のデザインデータを作成するのに適しています。ご自身の想像に近い色を印刷で実現するためには、これらのアプリケーションを使って、CMYKのカラーモードでデザインデータを作成しましょう。\n\n  \n\n **CMYKカラーモードの設定方法**\n\n[カラー印刷の色設定：Illustrator](./%E3%82%AB%E3%83%A9%E3%83%BC%E5%8D%B0%E5%88%B7%E3%81%AE%E8%89%B2%E8%A8%AD%E5%AE%9A%EF%BC%9AIllustrator-60f55150effc3b001cad959a)\n\n[カラー設定：Photoshop](./%E3%82%AB%E3%83%A9%E3%83%BC%E8%A8%AD%E5%AE%9A%EF%BC%9APhotoshop-60f55150effc3b001cad9594)\n\n  \n\n **Word・PowerPointでの注意点**\n\nMicrosoft\n[Office](./Office)社の「[Word](./Word)（ワード）」「[PowerPoint](./PowerPoint)（パワーポイント）」は、RGBカラーモードでしかデータを作成することができません。\n\n印刷の版を作るために、RGBカラーでデータを入稿された場合、ラクスルにてCMYKのカラーモードに変換します。RGBはCMYKよりも表現できる色数が多く、CMYKに変換した際、パソコンの画面上の表現通りの再現ができないため、特に発色の強い鮮やかな色はくすんだような色になります。\n\nご希望通りの色で印刷できない可能性がございますことをご了承の上、ご入稿ください。\n\n",
+        "flowchart": [
+            {
+                "id": "1",
+                "type": "default",
+                "data": {
+                    "label": "CMYK vs RGB"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 25
+                }
+            },
+            {
+                "id": "2",
+                "type": "default",
+                "data": {
+                    "label": "CMYKカラー"
+                },
+                "position": {
+                    "x": 50,
+                    "y": 75
+                }
+            },
+            {
+                "id": "3",
+                "type": "default",
+                "data": {
+                    "label": "RGBカラー"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 75
+                }
+            },
+            {
+                "id": "4",
+                "type": "default",
+                "data": {
+                    "label": "色の三原色\nC（シアン）M（マゼンタ）Y（イエロー）\nとK（ブラック）を加えて色を表現"
+                },
+                "position": {
+                    "x": 50,
+                    "y": 150
+                }
+            },
+            {
+                "id": "5",
+                "type": "default",
+                "data": {
+                    "label": "光の三原色\nR（赤）G（緑）B（青）\nで色を表現"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 150
+                }
+            },
+            {
+                "id": "6",
+                "type": "default",
+                "data": {
+                    "label": "減法混色"
+                },
+                "position": {
+                    "x": 50,
+                    "y": 225
+                }
+            },
+            {
+                "id": "7",
+                "type": "default",
+                "data": {
+                    "label": "加法混色"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 225
+                }
+            },
+            {
+                "id": "8",
+                "type": "default",
+                "data": {
+                    "label": "色域が狭い"
+                },
+                "position": {
+                    "x": 50,
+                    "y": 300
+                }
+            },
+            {
+                "id": "9",
+                "type": "default",
+                "data": {
+                    "label": "色域が広い"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 300
+                }
+            },
+            {
+                "id": "10",
+                "type": "default",
+                "data": {
+                    "label": "CMYK対応アプリケーション\nIllustrator, Photoshop, InDesign"
+                },
+                "position": {
+                    "x": 50,
+                    "y": 375
+                }
+            },
+            {
+                "id": "11",
+                "type": "default",
+                "data": {
+                    "label": "カラー設定が必要"
+                },
+                "position": {
+                    "x": 50,
+                    "y": 450
+                }
+            },
+            {
+                "id": "12",
+                "type": "default",
+                "data": {
+                    "label": "RGBモードのみ\nWord, PowerPoint"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 375
+                }
+            },
+            {
+                "id": "13",
+                "type": "default",
+                "data": {
+                    "label": "色の鮮やかさが落ちる\n特に発色の強い鮮やかな色"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 450
+                }
+            },
+            {
+                "id": "e1-2",
+                "source": "1",
+                "target": "2",
+                "type": "smoothstep"
+            },
+            {
+                "id": "e1-3",
+                "source": "1",
+                "target": "3",
+                "type": "smoothstep"
+            },
+            {
+                "id": "e2-4",
+                "source": "2",
+                "target": "4",
+                "type": "smoothstep"
+            },
+            {
+                "id": "e3-5",
+                "source": "3",
+                "target": "5",
+                "type": "smoothstep"
+            },
+            {
+                "id": "e4-6",
+                "source": "4",
+                "target": "6",
+                "type": "smoothstep"
+            },
+            {
+                "id": "e5-7",
+                "source": "5",
+                "target": "7",
+                "type": "smoothstep"
+            },
+            {
+                "id": "e6-8",
+                "source": "6",
+                "target": "8",
+                "type": "straight"
+            },
+            {
+                "id": "e7-9",
+                "source": "7",
+                "target": "9",
+                "type": "straight"
+            },
+            {
+                "id": "e2-10",
+                "source": "2",
+                "target": "10",
+                "type": "smoothstep"
+            },
+            {
+                "id": "e10-11",
+                "source": "10",
+                "target": "11",
+                "type": "smoothstep"
+            },
+            {
+                "id": "e3-12",
+                "source": "3",
+                "target": "12",
+                "type": "smoothstep"
+            },
+            {
+                "id": "e12-13",
+                "source": "12",
+                "target": "13",
+                "type": "smoothstep"
+            }
+        ],
+        "link": "https://helpfeel.com/raksul/CMYK%E3%82%AB%E3%83%A9%E3%83%BC%E3%81%A8RGB%E3%82%AB%E3%83%A9%E3%83%BC-60f55150effc3b001cad9591",
+        "questions": [
+            "「 CMYK カラー」とは？",
+            "Illustrator はCMYKカラーモードに対応していますか？",
+            "Photoshop はCMYKカラーモードに対応していますか？",
+            "PowerPoint はCMYKカラーモードに対応していますか？"
+        ],
+        "id": 8
+    },
+    {
+        "content": "# カラー設定：Photoshop\n\n印刷データは必ず[CMYK](./CMYK)カラーで作成してください。また、[特色](./%E7%89%B9%E8%89%B2)（スポットカラー）で印刷での印刷は承っておりませんので、特色（スポットカラー）は使用しないでください。\n\nまた、[モノクロ印刷](./%E3%83%A2%E3%83%8E%E3%82%AF%E3%83%AD%E5%8D%B0%E5%88%B7)は「[グレースケール](./%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AB)」で作成してください。詳しくは「\n[グレースケールの設定](https://raksul.com/guide/photoshop/gray/) 」をご確認ください。\n\n※[Photoshop](./Photoshop) ElementsではCMYKカラーモードの設定ができません。\n\n  \n\n  \n\n **新規ドキュメントのカラーモード設定方法**\n\n  \n\n **「新規ドキュメント作成」**\n時に、[カラーモード](./%E3%82%AB%E3%83%A9%E3%83%BC%E3%83%A2%E3%83%BC%E3%83%89)は\n**「CMYK」** を選択してください。\n\n![](https://raksul.com/guide/wp-content/uploads/2016/04/photo_color01-1.jpg)\n\n  \n\n  \n\n **作成済みのドキュメントのカラーモード変更方法**\n\n  \n\n **メニュー「イメージ」→「モード」** で変換してください。\n\n[RGB](./RGB)カラーなどをCMYKに変換するとCMYKで再現できない色域が失われ、フィルタなどの一部の機能が使用できなくなります。カラーモード変換後、データを確認しデザインを調整してください。\n\n![](https://raksul.com/guide/wp-content/uploads/2016/04/photo_color02-1.jpg)\n\n  \n\n※また、「ダブルトーンモード」「スポットカラーチャンネル」もご使用いただけません。CMYKカラーに変換してください。\n\n  \n\n  \n\n **ダブルトーンの場合のカラーモード変更方法**\n\nダブルトーンとはブラック以外の単色のインク、または2色、3色、4色のインクを使用して印刷するグレースケール画像のことです。\n\n **メニュー「イメージ」→「モード」→「CMYKカラー」** で変換してください。\n\n![](https://raksul.com/guide/wp-content/uploads/2016/04/photo_color03-1.jpg)\n\n  \n\n  \n\n **特色（スポットカラー）のプロセスカラー変換方法**\n\n  \n\nスポットカラーチャンネルとは、CMYKのプロセスインクに追加して使用する、特色などのカラーチャンネルのことです。\n\nチャンネルパレットで特色に該当するスポットカラーチャンネルを選択し、出てきたメニューから「スポットカラーチャンネルを統合」を選択してください。\n\n![](https://raksul.com/guide/wp-content/uploads/2016/04/photo_color04-1.jpg)\n\n  \n\n※カラーモード変換後は元のカラーモードに戻しても色味は元の状態に戻りません。あらかじめ別名保存をした上で、実施ください。\n\n",
+        "flowchart": [
+            {
+                "id": "1",
+                "type": "default",
+                "data": {
+                    "label": "印刷データのカラー設定"
+                },
+                "position": {
+                    "x": 250,
+                    "y": 25
+                }
+            },
+            {
+                "id": "2",
+                "type": "default",
+                "data": {
+                    "label": "必ずCMYKカラーで作成"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 125
+                },
+                "style": {
+                    "backgroundColor": "#fff7cd"
+                }
+            },
+            {
+                "id": "3",
+                "type": "default",
+                "data": {
+                    "label": "特色（スポットカラー）不可"
+                },
+                "position": {
+                    "x": 400,
+                    "y": 125
+                },
+                "style": {
+                    "backgroundColor": "#ffd1d1"
+                }
+            },
+            {
+                "id": "4",
+                "type": "default",
+                "data": {
+                    "label": "モノクロ印刷はグレースケールで作成"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 225
+                },
+                "style": {
+                    "backgroundColor": "#e0e0e0"
+                }
+            },
+            {
+                "id": "5",
+                "type": "default",
+                "data": {
+                    "label": "グレースケールの設定方法を確認"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 325
+                },
+                "style": {
+                    "backgroundColor": "#b8daff"
+                }
+            },
+            {
+                "id": "6",
+                "type": "default",
+                "data": {
+                    "label": "Photoshop ElementsではCMYK設定不可"
+                },
+                "position": {
+                    "x": 100,
+                    "y": 425
+                },
+                "style": {
+                    "backgroundColor": "#ffcccb"
+                }
+            },
+            {
+                "id": "7",
+                "type": "default",
+                "data": {
+                    "label": "新規ドキュメントカラーモード: CMYK"
+                },
+                "position": {
+                    "x": 700,
+                    "y": 125
+                },
+                "style": {
+                    "backgroundColor": "#fff7cd"
+                }
+            },
+            {
+                "id": "8",
+                "type": "default",
+                "data": {
+                    "label": "既存のドキュメントカラーモード変更"
+                },
+                "position": {
+                    "x": 700,
+                    "y": 225
+                },
+                "style": {
+                    "backgroundColor": "#e0e0e0"
+                }
+            },
+            {
+                "id": "9",
+                "type": "default",
+                "data": {
+                    "label": "ダブルトーンと特色のCMYK変換"
+                },
+                "position": {
+                    "x": 700,
+                    "y": 325
+                },
+                "style": {
+                    "backgroundColor": "#ffd1d1"
+                }
+            },
+            {
+                "id": "e1-2",
+                "source": "1",
+                "target": "2",
+                "type": "straight",
+                "animated": true
+            },
+            {
+                "id": "e1-3",
+                "source": "1",
+                "target": "3",
+                "type": "straight",
+                "animated": true
+            },
+            {
+                "id": "e2-4",
+                "source": "2",
+                "target": "4",
+                "type": "straight"
+            },
+            {
+                "id": "e4-5",
+                "source": "4",
+                "target": "5",
+                "type": "straight"
+            },
+            {
+                "id": "e2-6",
+                "source": "2",
+                "target": "6",
+                "type": "straight"
+            },
+            {
+                "id": "e1-7",
+                "source": "1",
+                "target": "7",
+                "type": "straight",
+                "animated": true
+            },
+            {
+                "id": "e1-8",
+                "source": "1",
+                "target": "8",
+                "type": "straight",
+                "animated": false
+            },
+            {
+                "id": "e1-9",
+                "source": "1",
+                "target": "9",
+                "type": "straight",
+                "animated": true
+            }
+        ],
+        "link": "https://helpfeel.com/raksul/%E3%82%AB%E3%83%A9%E3%83%BC%E8%A8%AD%E5%AE%9A%EF%BC%9APhotoshop-60f55150effc3b001cad9594",
+        "questions": [
+            "Photoshopでダブルトーンを CMYK カラーモードに変更する方法は？",
+            "Photoshop でカラー印刷用データを作成する場合の色設定",
+            "Photoshopで 特色 をプロセスカラーに変換する方法は？"
+        ],
+        "id": 9
+    }
+]
