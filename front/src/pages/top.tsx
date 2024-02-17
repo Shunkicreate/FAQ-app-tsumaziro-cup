@@ -3,7 +3,7 @@ import TopInput from "../components/TopInput";
 import useQuestion from "../hooks/useQuestion";
 import Loading from "../components/Loading";
 import {useEffect, useState} from "react";
-import {azureAISearch} from "../api/azureAISearch";
+import {azureAISearch} from "./api";
 
 export function TopPage(): JSX.Element {
   const {
