@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # 依存関係をインストールし、不要なファイルを削除
-RUN npm install && npm cache clean --force
+RUN npm install
 
 COPY . .
 
