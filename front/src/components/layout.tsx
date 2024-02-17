@@ -1,22 +1,10 @@
 import {Outlet} from "react-router-dom";
-import progateLogo from "../assets/progate_logo.svg";
-import helpfeelLogo from "../assets/helpfeel_logo.svg";
-import {ImCross} from "react-icons/im";
-import {Button, useColorMode} from "@chakra-ui/react";
-import {MoonIcon, SunIcon} from "@chakra-ui/icons";
+import Header from "./Header";
 
 export function Layout(): JSX.Element {
-  const {colorMode, toggleColorMode} = useColorMode();
   return (
     <div>
-      <header className="flex h-8 m-4 items-center">
-        <img src={progateLogo} alt="progate logo" className="h-full" />
-        <ImCross className="h-3 mx-2" />
-        <img src={helpfeelLogo} alt="helpfeel logo" className="h-full" />
-        <Button onClick={toggleColorMode}>
-          {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-        </Button>
-      </header>
+      <Header />
       <main className="h-[calc(100vh-8rem)] py-8 md:py-14 px-4 flex justify-center">
         <div className="w-full md:max-w-[760px]">
           <Outlet />
