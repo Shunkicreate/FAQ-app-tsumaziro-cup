@@ -1,24 +1,26 @@
-import { useEffect, useState } from "react";
-import { ApiResponseArray, FAQ } from "../types";
-import { azureAISearch } from "../utils/api";
+import {useEffect, useState} from "react";
+import {ApiResponseArray, FAQ} from "../types";
+import {azureAISearch} from "../utils/api";
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const useQuestion = () => {
   const searchParams = new URLSearchParams(window.location.search);
-  const defaultQuery = searchParams.get('q') || '';
+  const defaultQuery = searchParams.get("q") || "";
   const [input, setInput] = useState(defaultQuery);
   const [isLoading, setIsLoading] = useState(true);
   const [faqs, setFaqs] = useState<FAQ[]>([]);
   const storedFaqs = localStorage.getItem("faqs");
-  const [defaultFaqs, setDefaultFaqs] = useState<FAQ[]>(storedFaqs ? JSON.parse(storedFaqs) : []);
+  const [defaultFaqs, setDefaultFaqs] = useState<FAQ[]>(
+    storedFaqs ? JSON.parse(storedFaqs) : [],
+  );
 
   useEffect(() => {
     (async () => {
       const res = await fetch("/api/faqs");
-      const faqs = await res.json() as FAQ[];
+      const faqs = (await res.json()) as FAQ[];
       faqs.map(faq => {
-        faq.pageTitle = constructUrl(faq.pageTitle)
-      })
+        faq.pageTitle = constructUrl(faq.pageTitle);
+      });
       localStorage.setItem("faqs", JSON.stringify(faqs));
       setDefaultFaqs(faqs.slice(0, 5));
       setIsLoading(false);
@@ -40,7 +42,7 @@ const useQuestion = () => {
     // faqsの各要素を更新またはそのまま使用
     const updatedFaqs = faqs.map(faq => {
       const aiFaq = aiFaqs.find(aiFaq => aiFaq.question === faq.question);
-      return aiFaq ? { ...faq, pageTitle: aiFaq.pageTitle } : faq;
+      return aiFaq ? {...faq, pageTitle: aiFaq.pageTitle} : faq;
     });
 
     // aiFaqsにあってfaqsにない要素を追加
@@ -56,12 +58,12 @@ const useQuestion = () => {
   const handleURL = (url: string): void => {
     const newUrl = new URL(window.location.href);
     if (url) {
-      newUrl.searchParams.set('q', url);
+      newUrl.searchParams.set("q", url);
     } else {
-      newUrl.searchParams.delete('q');
+      newUrl.searchParams.delete("q");
     }
-    window.history.replaceState({}, '', newUrl.toString());
-  }
+    window.history.replaceState({}, "", newUrl.toString());
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     handleURL(e.target.value);
@@ -82,17 +84,17 @@ const useQuestion = () => {
       window.alert("検索ワードを入力してください");
       return;
     }
-    azureAISearch(query).then((result) => {
+    azureAISearch(query).then(result => {
       const updatedFaqs = updateFaqs(faqs, result);
       setFaqs(updatedFaqs);
       localStorage.setItem("faqs", JSON.stringify(updatedFaqs));
-    })
+    });
   };
 
   const handleInputSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     handleClickAISearch(input);
-  }
+  };
 
   return {
     input,

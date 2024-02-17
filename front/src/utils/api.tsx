@@ -1,6 +1,8 @@
-import { ApiResponseArray } from "../types";
+import {ApiResponseArray} from "../types";
 
-export const azureAISearch = async (searchTerm: string): Promise<ApiResponseArray> => {
+export const azureAISearch = async (
+  searchTerm: string,
+): Promise<ApiResponseArray> => {
   const apiKey = import.meta.env.VITE_AZURE_SEARCH_API_KEY;
   const url = `https://faqsite.search.windows.net/indexes/azureblob-index/docs?search=${searchTerm}&$count=true&api-version=2023-11-01`;
   // apikeyを環境変数から取得する
@@ -17,6 +19,6 @@ export const azureAISearch = async (searchTerm: string): Promise<ApiResponseArra
   const faqs = await res.json();
   // faqsのjsonの中からvalueの中身を取得する
   const value = faqs.value as ApiResponseArray;
-  console.log(value)
+  console.log(value);
   return value;
 };

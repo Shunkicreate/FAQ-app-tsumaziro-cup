@@ -13,14 +13,17 @@ export function TopPage(): JSX.Element {
     handleInputSubmit,
   } = useQuestion();
 
-
   if (isLoading) {
     return <Loading />;
   }
 
   return (
     <>
-      <TopInput input={input} handleInputChange={handleInputChange} handleInputSubmit={handleInputSubmit}/>
+      <TopInput
+        input={input}
+        handleInputChange={handleInputChange}
+        handleInputSubmit={handleInputSubmit}
+      />
       <div className="mt-6 px-4 py-6 h-[calc(100%-12rem)] overflow-scroll shadow">
         {input === "" ? (
           <ShowUnorderedList items={defaultFaqs} input={input} />
