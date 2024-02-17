@@ -7,7 +7,7 @@
     "forceConsistentCasingInFileNames": true, // ファイル名の大文字小文字の一貫性を強制
     "skipLibCheck": true, // すべての宣言ファイルの型チェックをスキップ
     "outDir": "./dist", // 出力ディレクトリ
-    "rootDir": "./src", // ソースファイルが含まれるディレクトリ
+    "rootDir": "./", // ソースファイルが含まれるディレクトリ
     "removeComments": true // 出力からコメントを削除
   },
   "include": ["./src/**/*", "bin/**/*"],
