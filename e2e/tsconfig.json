@@ -20,5 +20,5 @@
     /* Type Checking */
     "strict": true
   },
-  "include": ["src/**/*", "jest-global.d.ts"]
+  "include": ["src/**/*", "jest-global.d.ts"],
 }

@@ -19,13 +19,7 @@ app.get("/api/healthcheck", async (req, res) => {
 });
 
 app.get("/api/faqs", async (req, res) => {
-  const faqsPath = path.resolve(
-    __dirname,
-    "..",
-    "..",
-    "data",
-    "faqs.json",
-  );
+  const faqsPath = path.resolve(__dirname, "..", "..", "data", "faqs.json");
   const faqs = await fs.readFile(faqsPath, "utf-8");
   res.status(200).json(JSON.parse(faqs));
 });

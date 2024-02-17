@@ -10,7 +10,7 @@
     "rootDir": "./src", // ソースファイルが含まれるディレクトリ
     "removeComments": true // 出力からコメントを削除
   },
-  "include": ["./src/**/*"],
+  "include": ["./src/**/*", "bin/**/*"],
   "exclude": [
     "node_modules", // 除外するディレクトリ
     "**/*.spec.ts"
