@@ -19,7 +19,8 @@ const config = {
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-onboarding"),
     getAbsolutePath("@storybook/addon-interactions"),
-    '@storybook/addon-a11y'
+    '@storybook/addon-a11y',
+    '@chakra-ui/storybook-addon',
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
@@ -27,6 +28,18 @@ const config = {
   },
   docs: {
     autodocs: "tag",
+  },
+  features: {
+    emotionAlias: false
+  },
+  webpackFinal: async (config) => {
+    config.module.rules.push({
+      test: /\.mjs$/,
+      include: /node_modules/,
+      type: 'javascript/auto',
+    })
+
+    return config
   },
 };
 export default config;
