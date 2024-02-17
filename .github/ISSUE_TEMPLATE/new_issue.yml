@@ -1,0 +1,34 @@
+name: Issueの作成
+description: 必要な修正・付けたい機能などから新たなissueを作成
+title: "sample"
+body:
+  - type: input
+    id: main-page
+    attributes:
+      label: 作業ファイル
+      placeholder: 例) cards.tsx
+    validations:
+      required: true
+  - type: textarea
+    id: what-needed
+    attributes:
+      label: 必要な作業内容
+      value: |
+        1.
+        2.
+        3.
+        ...
+    validations:
+      required: true
+  - type: textarea
+    id: why-needed
+    attributes:
+      label: 理由
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 補足
+    validations:
+      required: false
