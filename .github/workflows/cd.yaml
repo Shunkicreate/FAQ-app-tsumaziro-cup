@@ -29,3 +29,10 @@ jobs:
       
       - name: Push the docker image with latest tag
         run: docker push mashikotyan/hackz:latest
+      
+      - name: 'Deploy to Azure WebApp'
+        uses: azure/webapps-deploy@v3
+        with: 
+          app-name: hackz
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          images: 'ghcr.io/mashikotyan:${{ github.sha }}'
