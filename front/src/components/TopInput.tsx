@@ -26,7 +26,6 @@ const TopInput = (props: TopInputProps): JSX.Element => {
             placeholder="例: メールマガジン"
             data-test="search-input"
             w="100%"
-            // sm={{ w: "36rem" }}
             h="12"
             px="4"
             py="3"

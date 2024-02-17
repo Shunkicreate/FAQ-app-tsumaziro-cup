@@ -1,6 +1,5 @@
 import { StoryObj, Meta } from "@storybook/react";
 import TopInput from "../../front/src/components/TopInput";
-// import TopInput from "@/components/TopInput";
 
 const meta = {
   title: "Components/TopInput",

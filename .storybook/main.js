@@ -21,6 +21,7 @@ const config = {
     getAbsolutePath("@storybook/addon-interactions"),
     '@storybook/addon-a11y',
     '@chakra-ui/storybook-addon',
+    'storybook-addon-react-router-v6',
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
