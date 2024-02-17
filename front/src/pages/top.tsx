@@ -1,5 +1,5 @@
-import {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import wanko from "@/assets/wanko.svg";
 import prompt from "@/assets/prompt.svg";
 
@@ -66,7 +66,7 @@ export function TopPage(): JSX.Element {
           ></input>
         </div>
       </div>
-      <div className="mt-6 px-4 py-6 bg-white h-[calc(100%-12rem)] overflow-scroll shadow">
+      <div className="mt-6 px-4 py-6 h-[calc(100%-12rem)] overflow-scroll shadow">
         {input === "" ? (
           <>
             <span className="text-[#2B546A] text-base">
@@ -76,7 +76,7 @@ export function TopPage(): JSX.Element {
               {defaultFaqs.map(faq => (
                 <li
                   key={faq.question}
-                  className="pl-2 py-2 text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] hover:bg-[#F6F6F7] rounded-md"
+                  className="pl-2 py-2 text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] hover:bg-[#F6F6F7] dark:hover:bg-[#fff] rounded-md"
                 >
                   <Link to={`/pages/${faq.pageTitle}`}>{faq.question}</Link>
                 </li>
@@ -90,7 +90,7 @@ export function TopPage(): JSX.Element {
               {faqs.map(faq => (
                 <li
                   key={faq.question}
-                  className="pl-2 py-2 text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] hover:bg-[#F6F6F7] rounded-md"
+                  className="pl-2 py-2 text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] hover:bg-[#F6F6F7] dark:hover:bg-[#fff]  rounded-md"
                 >
                   <Link
                     to={`/pages/${faq.pageTitle}`}
