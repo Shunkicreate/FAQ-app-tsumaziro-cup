@@ -1,5 +1,6 @@
 import {Outlet} from "react-router-dom";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export function Layout(): JSX.Element {
   return (
@@ -10,14 +11,7 @@ export function Layout(): JSX.Element {
           <Outlet />
         </div>
       </main>
-      <footer className="fixed bottom-0 left-0 z-20 w-full pt-12 px-4">
-        <div className="flex justify-center text-base">
-          <span>&copy; 2014 Progate, Inc.</span>
-        </div>
-        <div className="flex justify-end mt-6 text-sm text-[#AAAAAA]">
-          <span>Powered by Helpfeel</span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
