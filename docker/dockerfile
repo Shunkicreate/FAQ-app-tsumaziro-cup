@@ -3,12 +3,10 @@ FROM node:lts-alpine as builder
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY . .
 
 # 依存関係をインストールし、不要なファイルを削除
 RUN npm install
-
-COPY . .
 
 RUN npm run build
 
