@@ -1,5 +1,3 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import MainInput from '../../front/src/components/MainInput'
 
 export default {
