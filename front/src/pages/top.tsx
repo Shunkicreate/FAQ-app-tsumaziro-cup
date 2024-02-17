@@ -1,8 +1,7 @@
-import {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
+import { useEffect, useState } from "react";
 import wanko from "@/assets/wanko.svg";
 import prompt from "@/assets/prompt.svg";
-import {UnorderedList, ListItem, useColorModeValue} from "@chakra-ui/react";
+import ShowUnorderedList from "../components/ShowUnorderdList";
 type FAQ = {
   question: string;
   pageTitle: string;
@@ -13,8 +12,6 @@ export function TopPage(): JSX.Element {
   const [isLoading, setIsLoading] = useState(true);
   const [faqs, setFaqs] = useState<FAQ[]>([]);
   const [defaultFaqs, setDefaultFaqs] = useState<FAQ[]>([]);
-  const color = useColorModeValue("#2B546A", "gray.300");
-  const hoverColor = useColorModeValue("gray.200", "gray.900");
 
   useEffect(() => {
     (async () => {
@@ -74,38 +71,12 @@ export function TopPage(): JSX.Element {
             <span className="text-[#2B546A] text-base">
               Frequently Asked Questions
             </span>
-            <UnorderedList p={4}>
-              {defaultFaqs.map(faq => (
-                <ListItem
-                  key={faq.question}
-                  pl={2}
-                  py={2}
-                  color={color}
-                  _hover={{bg: hoverColor}}
-                  className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
-                >
-                  <Link to={`/pages/${faq.pageTitle}`}>{faq.question}</Link>
-                </ListItem>
-              ))}
-            </UnorderedList>
+            <ShowUnorderedList items={defaultFaqs} />
           </>
         ) : (
           <>
             <span className="text-[#2B546A] text-base">{`${faqs.length} questions matched`}</span>
-            <UnorderedList p={4}>
-              {defaultFaqs.map(faq => (
-                <ListItem
-                  key={faq.question}
-                  pl={2}
-                  py={2}
-                  color={color}
-                  _hover={{bg: hoverColor}}
-                  className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
-                >
-                  <Link to={`/pages/${faq.pageTitle}`}>{faq.question}</Link>
-                </ListItem>
-              ))}
-            </UnorderedList>
+            <ShowUnorderedList items={defaultFaqs} />
           </>
         )}
       </div>
