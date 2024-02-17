@@ -4,6 +4,7 @@ import {RouterProvider, createBrowserRouter} from "react-router-dom";
 import {TopPage} from "./pages/top.tsx";
 import {AnswerPage} from "./pages/answer.tsx";
 import {Layout} from "./components/layout.tsx";
+import { ChakraProvider } from '@chakra-ui/react';
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -24,6 +25,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ChakraProvider>
+      <RouterProvider router={router} />
+    </ChakraProvider>
   </React.StrictMode>,
 );
