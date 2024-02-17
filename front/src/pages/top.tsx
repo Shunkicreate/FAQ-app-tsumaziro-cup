@@ -13,7 +13,8 @@ export function TopPage(): JSX.Element {
   const [isLoading, setIsLoading] = useState(true);
   const [faqs, setFaqs] = useState<FAQ[]>([]);
   const [defaultFaqs, setDefaultFaqs] = useState<FAQ[]>([]);
-  const color = useColorModeValue('#2B546A', '#2B546A')
+  const color = useColorModeValue('#2B546A', 'gray.300')
+  const hoverColor = useColorModeValue('gray.200', 'gray.900')
 
   useEffect(() => {
     (async () => {
@@ -80,41 +81,31 @@ export function TopPage(): JSX.Element {
                   pl={2}
                   py={2}
                   color={color}
+                  _hover={{ bg: hoverColor }}
                   className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
                 >
                   <Link to={`/pages/${faq.pageTitle}`}>{faq.question}</Link>
                 </ListItem>
               ))}
             </UnorderedList>
-            <ul className="pt-4">
-              {defaultFaqs.map(faq => (
-                <li
-                  key={faq.question}
-                  className="pl-2 py-2 text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] hover:bg-[#F6F6F7] dark:hover:bg-[#fff] rounded-md"
-                >
-                  <Link to={`/pages/${faq.pageTitle}`}>{faq.question}</Link>
-                </li>
-              ))}
-            </ul>
           </>
         ) : (
           <>
             <span className="text-[#2B546A] text-base">{`${faqs.length} questions matched`}</span>
-            <ul className="pt-4">
-              {faqs.map(faq => (
-                <li
+            <UnorderedList p={4}>
+              {defaultFaqs.map(faq => (
+                <ListItem
                   key={faq.question}
-                  className="pl-2 py-2 text-lg text-[#y] list-inside list-square marker:text-[#57D5C1] hover:bg-[#F6F6F7] dark:hover:bg-[#fff]  rounded-md"
+                  pl={2}
+                  py={2}
+                  color={color}
+                  _hover={{ bg: hoverColor }}
+                  className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
                 >
-                  <Link
-                    to={`/pages/${faq.pageTitle}`}
-                    data-test="question-title"
-                  >
-                    {faq.question}
-                  </Link>
-                </li>
+                  <Link to={`/pages/${faq.pageTitle}`}>{faq.question}</Link>
+                </ListItem>
               ))}
-            </ul>
+            </UnorderedList>
           </>
         )}
       </div>
