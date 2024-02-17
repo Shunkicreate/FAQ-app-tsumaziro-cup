@@ -21,11 +21,8 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-      
-      - name: cd front
-        run: cd front
       - name: search env file
-        run: ls -la
+        run: ls -la ./front
 
       - name: Build a docker image with commit SHA
         run: docker build -t mashikotyan/hackz:${{ github.sha }} -f ./docker/dockerfile .
