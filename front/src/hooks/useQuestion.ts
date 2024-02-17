@@ -1,5 +1,6 @@
-import {useEffect, useState} from "react";
-import {FAQ} from "../types";
+import { useEffect, useState } from "react";
+import { FAQ } from "../types";
+import { azureAISearch } from "../pages/api";
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const useQuestion = () => {
@@ -7,6 +8,8 @@ const useQuestion = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [faqs, setFaqs] = useState<FAQ[]>([]);
   const [defaultFaqs, setDefaultFaqs] = useState([]);
+  const [aiSearchResult, setAISearchResult] = useState<string>("");
+
   useEffect(() => {
     (async () => {
       const res = await fetch("/api/faqs");
@@ -28,6 +31,19 @@ const useQuestion = () => {
     );
     setFaqs(filteredFaqs);
   };
+
+  const handleClickAISearch = async (query: string): Promise<void> => {
+    azureAISearch(query).then((result) => {
+      setAISearchResult(result);
+      console.log(result);
+    })
+  };
+
+  const handleInputSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
+    e.preventDefault();
+    handleClickAISearch(input);
+  }
+
   return {
     input,
     setInput,
@@ -37,6 +53,9 @@ const useQuestion = () => {
     defaultFaqs,
     setDefaultFaqs,
     handleInputChange,
+    handleInputSubmit,
+    aiSearchResult,
+
   };
 };
 
