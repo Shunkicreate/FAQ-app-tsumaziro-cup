@@ -1,0 +1,33 @@
+# ビルド用のイメージ
+FROM node:lts-alpine as builder
+
+WORKDIR /app
+
+COPY package*.json ./
+
+# 依存関係をインストールし、不要なファイルを削除
+RUN npm install && npm cache clean --force
+
+COPY . .
+
+RUN npm run build
+
+RUN npm run build:api
+
+# 本番用のイメージ
+FROM node:lts-alpine
+
+WORKDIR /app
+
+# 本番環境では開発依存関係をインストールしない
+COPY package*.json ./
+RUN npm install --production
+
+COPY --from=builder /app/front/dist ./front/dist
+COPY --from=builder /app/api/dist ./api/dist
+COPY ./api/ ./api/
+COPY ./data ./data
+
+EXPOSE 8000
+
+CMD ["node", "./api/dist/run_server.js"]
