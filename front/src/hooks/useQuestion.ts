@@ -26,7 +26,7 @@ const useQuestion = () => {
         const filteredFaqs = faqs.filter((faq) => faq.question.toLowerCase().includes(e.target.value.toLowerCase()));
         setFaqs(filteredFaqs);
     };
-    return { input, setInput, isLoading, faqs, defaultFaqs, handleInputChange };
+    return { input, setInput, isLoading, setIsLoading, faqs, defaultFaqs, setDefaultFaqs, handleInputChange };
 }
 
 export default useQuestion;
