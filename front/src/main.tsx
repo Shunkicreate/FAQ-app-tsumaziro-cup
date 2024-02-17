@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { TopPage } from "./pages/top.tsx";
-import { AnswerPage } from "./pages/answer.tsx";
-import { Layout } from "./components/layout.tsx";
-import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
+import {RouterProvider, createBrowserRouter} from "react-router-dom";
+import {TopPage} from "./pages/top.tsx";
+import {AnswerPage} from "./pages/answer.tsx";
+import {Layout} from "./components/layout.tsx";
+import {ChakraProvider, ColorModeScript} from "@chakra-ui/react";
 import theme from "./utils/theme.ts";
 import "./index.css";
 

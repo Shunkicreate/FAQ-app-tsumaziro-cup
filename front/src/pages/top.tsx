@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 import wanko from "@/assets/wanko.svg";
 import prompt from "@/assets/prompt.svg";
-import { UnorderedList, ListItem, useColorModeValue } from "@chakra-ui/react";
+import {UnorderedList, ListItem, useColorModeValue} from "@chakra-ui/react";
 type FAQ = {
   question: string;
   pageTitle: string;
@@ -13,8 +13,8 @@ export function TopPage(): JSX.Element {
   const [isLoading, setIsLoading] = useState(true);
   const [faqs, setFaqs] = useState<FAQ[]>([]);
   const [defaultFaqs, setDefaultFaqs] = useState<FAQ[]>([]);
-  const color = useColorModeValue('#2B546A', 'gray.300')
-  const hoverColor = useColorModeValue('gray.200', 'gray.900')
+  const color = useColorModeValue("#2B546A", "gray.300");
+  const hoverColor = useColorModeValue("gray.200", "gray.900");
 
   useEffect(() => {
     (async () => {
@@ -81,7 +81,7 @@ export function TopPage(): JSX.Element {
                   pl={2}
                   py={2}
                   color={color}
-                  _hover={{ bg: hoverColor }}
+                  _hover={{bg: hoverColor}}
                   className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
                 >
                   <Link to={`/pages/${faq.pageTitle}`}>{faq.question}</Link>
@@ -99,7 +99,7 @@ export function TopPage(): JSX.Element {
                   pl={2}
                   py={2}
                   color={color}
-                  _hover={{ bg: hoverColor }}
+                  _hover={{bg: hoverColor}}
                   className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
                 >
                   <Link to={`/pages/${faq.pageTitle}`}>{faq.question}</Link>
