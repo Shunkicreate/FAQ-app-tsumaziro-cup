@@ -25,13 +25,14 @@ const TopInput = (props: TopInputProps): JSX.Element => {
             onChange={handleInputChange}
             placeholder="例: メールマガジン"
             data-test="search-input"
+            tabIndex={1}
             w="100%"
             h="12"
             px="4"
             py="3"
             shadow="md"
           />
-          <Button colorScheme="WhiteAlpha" variant="outline" type="submit">
+          <Button colorScheme="WhiteAlpha" variant="outline" type="submit" tabIndex={2}>
             検索
           </Button>
         </Stack>
