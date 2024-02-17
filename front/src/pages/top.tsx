@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import wanko from "@/assets/wanko.svg";
 import prompt from "@/assets/prompt.svg";
-
+import { UnorderedList, ListItem, useColorModeValue } from "@chakra-ui/react";
 type FAQ = {
   question: string;
   pageTitle: string;
@@ -13,6 +13,7 @@ export function TopPage(): JSX.Element {
   const [isLoading, setIsLoading] = useState(true);
   const [faqs, setFaqs] = useState<FAQ[]>([]);
   const [defaultFaqs, setDefaultFaqs] = useState<FAQ[]>([]);
+  const color = useColorModeValue('#2B546A', '#2B546A')
 
   useEffect(() => {
     (async () => {
@@ -72,6 +73,19 @@ export function TopPage(): JSX.Element {
             <span className="text-[#2B546A] text-base">
               Frequently Asked Questions
             </span>
+            <UnorderedList p={4}>
+              {defaultFaqs.map(faq => (
+                <ListItem
+                  key={faq.question}
+                  pl={2}
+                  py={2}
+                  color={color}
+                  className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
+                >
+                  <Link to={`/pages/${faq.pageTitle}`}>{faq.question}</Link>
+                </ListItem>
+              ))}
+            </UnorderedList>
             <ul className="pt-4">
               {defaultFaqs.map(faq => (
                 <li
@@ -90,7 +104,7 @@ export function TopPage(): JSX.Element {
               {faqs.map(faq => (
                 <li
                   key={faq.question}
-                  className="pl-2 py-2 text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] hover:bg-[#F6F6F7] dark:hover:bg-[#fff]  rounded-md"
+                  className="pl-2 py-2 text-lg text-[#y] list-inside list-square marker:text-[#57D5C1] hover:bg-[#F6F6F7] dark:hover:bg-[#fff]  rounded-md"
                 >
                   <Link
                     to={`/pages/${faq.pageTitle}`}

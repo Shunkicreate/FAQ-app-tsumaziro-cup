@@ -14,6 +14,8 @@ module.exports = {
       decimal: "decimal",
       square: "square",
     },
+    darkMode: "class",
+
   },
   plugins: [],
 };
