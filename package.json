@@ -12,7 +12,8 @@
     "format:check": "npm run format:check --workspaces",
     "format:fix": "npm run format:fix --workspaces",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build": "npm run build -w front"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
@@ -24,7 +25,8 @@
     "framer-motion": "^11.0.5",
     "reactflow": "^11.10.4",
     "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0"
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
     "@chakra-ui/storybook-addon": "^5.1.0",

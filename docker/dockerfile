@@ -1,0 +1,45 @@
+# ベースイメージとしてNode.jsのLTS版を使用
+FROM node:lts as builder
+
+# 作業ディレクトリを設定
+WORKDIR /app
+
+# package.jsonとpackage-lock.jsonをコピー
+COPY package*.json ./
+
+# 依存関係をインストール
+RUN npm install
+
+# アプリケーションのソースコードをコピー
+COPY . .
+
+# ビルドを実行
+RUN npm run build
+
+# 本番用のイメージ
+FROM node:lts
+
+# 作業ディレクトリを設定
+WORKDIR /app
+
+RUN npm i -g ts-node
+
+# package.jsonとpackage-lock.jsonをコピー
+COPY package*.json ./
+
+# 本番依存関係のみをインストール
+RUN npm install
+
+# ビルドステップからdistディレクトリをコピー
+COPY --from=builder /app/front/dist ./front/dist
+
+# サーバーファイルをコピー
+COPY ./api/ ./api/
+
+COPY ./data .//data
+
+# 8000ポートを公開
+EXPOSE 8000
+
+# Expressサーバを起動
+CMD ["ts-node", "./api/bin/run_server.ts"]
