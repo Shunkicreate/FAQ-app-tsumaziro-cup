@@ -25,6 +25,6 @@ jobs:
             - name: run e2e test
               run: npm run test
             - name: Run format check
-              run: npm run format:ci 
+              run: npm run format:check
             - name: Run lint
-              run: npm run lint:ci 
+              run: npm run lint:check
