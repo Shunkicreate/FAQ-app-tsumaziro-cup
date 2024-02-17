@@ -29,7 +29,7 @@ export function AnswerPage(): JSX.Element {
 
   return (
     <>
-      <div className="bg-white lg:max-w-[760px] px-8 py-6 shadow">
+      <div className="lg:max-w-[760px] px-8 py-6 shadow">
         <h1
           className="border-l-4 border-[#30C8D6] pl-2 text-3xl text-[#2B546A]"
           data-test="answer-title"
