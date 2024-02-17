@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy-to-cloud-run:
+  deploy-to-azure-webapp:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
