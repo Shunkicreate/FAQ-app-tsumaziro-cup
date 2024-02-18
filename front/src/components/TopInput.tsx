@@ -1,8 +1,9 @@
-import {Button, Input, Image, Stack, Box} from "@chakra-ui/react";
-import wanko from "../assets/wanko.svg";
+import {Button, Input, Stack} from "@chakra-ui/react";
+import Loading from "./Loading";
 
 interface TopInputProps {
   input: string;
+  isLoading: boolean;
   handleInputChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   handleInputSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
 }
@@ -11,9 +12,7 @@ const TopInput = (props: TopInputProps): JSX.Element => {
   const {input, handleInputChange, handleInputSubmit} = props;
   return (
     <Stack spacing={4} align="center">
-      <Box w="32">
-        <Image src={wanko} alt="wanko" />
-      </Box>
+      <Loading isLoading={props.isLoading}></Loading>
       <form onSubmit={handleInputSubmit} className="w-full">
         <Stack
           direction="row"
