@@ -1,7 +1,6 @@
 import ShowUnorderedList from "../components/ShowUnorderdList";
 import TopInput from "../components/TopInput";
 import useQuestion from "../hooks/useQuestion";
-import Loading from "../components/Loading";
 import isSearchable from "../utils/isSearchable";
 
 export function TopPage(): JSX.Element {
@@ -14,16 +13,13 @@ export function TopPage(): JSX.Element {
     handleInputSubmit,
   } = useQuestion();
 
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
     <>
       <TopInput
         input={input}
         handleInputChange={handleInputChange}
         handleInputSubmit={handleInputSubmit}
+        isLoading={isLoading}
       />
       <div className="mt-6 px-4 py-6 h-[calc(100%-12rem)] overflow-scroll shadow">
         {!isSearchable(input) ? (

@@ -1,15 +1,10 @@
 import AnswerPageTitle from "../components/AnswerPageTitle";
-import Loading from "../components/Loading";
 import ReturnToTopPageButton from "../components/ReturnToTopPageButton";
 import ShowAnswerPageContent from "../components/ShowAnswerPageContent";
 import useAnswer from "../hooks/useAnswer";
 
 export function AnswerPage(): JSX.Element {
-  const {isLoading, lines, pageTitle} = useAnswer();
-
-  if (isLoading) {
-    return <Loading />;
-  }
+  const {lines, pageTitle} = useAnswer();
 
   return (
     <>
