@@ -1,18 +1,12 @@
-import { Link } from "react-router-dom";
-import {
-  Box,
-  Flex,
-  Image,
-  IconButton,
-  useColorMode,
-} from "@chakra-ui/react";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-import { ImCross } from "react-icons/im";
+import {Link} from "react-router-dom";
+import {Box, Flex, Image, IconButton, useColorMode} from "@chakra-ui/react";
+import {MoonIcon, SunIcon} from "@chakra-ui/icons";
+import {ImCross} from "react-icons/im";
 import progateLogo from "../assets/progate_logo.svg";
 import helpfeelLogo from "../assets/helpfeel_logo.svg";
 
 const Header = (): JSX.Element => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const {colorMode, toggleColorMode} = useColorMode();
   return (
     <Box as="header" w="full">
       <Flex h="8" m="4" alignItems="center" justifyContent="space-between">
