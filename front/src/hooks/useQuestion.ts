@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import { ApiResponseArray, FAQ } from "../types";
-import { azureAISearch } from "../utils/api";
+import {useEffect, useState} from "react";
+import {ApiResponseArray, FAQ} from "../types";
+import {azureAISearch} from "../utils/api";
 import isSearchable from "../utils/isSearchable";
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const useQuestion = () => {
   const searchParams = new URLSearchParams(window.location.search);
   const defaultQuery = searchParams.get("q") || "";
   const [input, setInput] = useState(defaultQuery);
-  const [prevInputValue, setPrevInputValue] = useState('');
+  const [prevInputValue, setPrevInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [faqs, setFaqs] = useState<FAQ[]>([]);
   const storedFaqs = localStorage.getItem("faqs");
@@ -44,7 +44,7 @@ const useQuestion = () => {
     // faqsの各要素を更新またはそのまま使用
     const updatedFaqs: FAQ[] = faqs.map(faq => {
       const aiFaq = aiFaqs.find(aiFaq => aiFaq.question === faq.question);
-      return aiFaq ? { ...faq, pageTitle: aiFaq.pageTitle, genby: "ai" } : faq;
+      return aiFaq ? {...faq, pageTitle: aiFaq.pageTitle, genby: "ai"} : faq;
     });
 
     // aiFaqsにあってfaqsにない要素を追加
@@ -85,11 +85,14 @@ const useQuestion = () => {
       //汎用検索関数に引っかからない場合，
       if (isSearchable(inputValue)) {
         // 前回の入力値と異なる場合，かつ空白でない場合
-        if (inputValue.trim() !== prevInputValue.trim() && inputValue.trim() !== '') {
-          handleClickAISearch(inputValue)
+        if (
+          inputValue.trim() !== prevInputValue.trim() &&
+          inputValue.trim() !== ""
+        ) {
+          handleClickAISearch(inputValue);
           setPrevInputValue(inputValue);
         }
-      };
+      }
     }, 3000);
 
     setTimer(newTimer);
