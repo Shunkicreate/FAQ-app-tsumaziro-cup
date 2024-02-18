@@ -1,15 +1,17 @@
 import {useEffect, useState} from "react";
 import {ApiResponseArray, FAQ} from "../types";
 import {azureAISearch} from "../utils/api";
-
+import isSearchable from "../utils/isSearchable";
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const useQuestion = () => {
   const searchParams = new URLSearchParams(window.location.search);
   const defaultQuery = searchParams.get("q") || "";
   const [input, setInput] = useState(defaultQuery);
+  const [prevInputValue, setPrevInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [faqs, setFaqs] = useState<FAQ[]>([]);
   const storedFaqs = localStorage.getItem("faqs");
+  const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
   const [defaultFaqs, setDefaultFaqs] = useState<FAQ[]>(
     storedFaqs ? JSON.parse(storedFaqs) : [],
   );
@@ -70,11 +72,30 @@ const useQuestion = () => {
     handleURL(inputValue);
     setInput(inputValue);
 
-    if (inputValue === "") {
+    if (!isSearchable(inputValue)) {
       setFaqs([]);
       return;
     }
 
+    if (timer) {
+      clearTimeout(timer);
+    }
+
+    const newTimer = setTimeout(() => {
+      //汎用検索関数に引っかからない場合，
+      if (isSearchable(inputValue)) {
+        // 前回の入力値と異なる場合，かつ空白でない場合
+        if (
+          inputValue.trim() !== prevInputValue.trim() &&
+          inputValue.trim() !== ""
+        ) {
+          handleClickAISearch(inputValue);
+          setPrevInputValue(inputValue);
+        }
+      }
+    }, 3000);
+
+    setTimer(newTimer);
     const faqs: FAQ[] = JSON.parse(localStorage.getItem("faqs") || "[]");
     const queries = inputValue.trim().split(/\s+/); // 半角・全角空白で分割
 
@@ -88,7 +109,7 @@ const useQuestion = () => {
   };
 
   const handleClickAISearch = async (query: string): Promise<void> => {
-    if (query === "") {
+    if (!isSearchable(query)) {
       window.alert("検索ワードを入力してください");
       return;
     }
@@ -107,6 +128,7 @@ const useQuestion = () => {
   const handleInputSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     handleClickAISearch(input);
+    setPrevInputValue(input);
   };
 
   return {

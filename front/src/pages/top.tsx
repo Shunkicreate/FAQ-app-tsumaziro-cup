@@ -1,6 +1,7 @@
 import ShowUnorderedList from "../components/ShowUnorderdList";
 import TopInput from "../components/TopInput";
 import useQuestion from "../hooks/useQuestion";
+import isSearchable from "../utils/isSearchable";
 
 export function TopPage(): JSX.Element {
   const {
@@ -21,7 +22,7 @@ export function TopPage(): JSX.Element {
         isLoading={isLoading}
       />
       <div className="mt-6 px-4 py-6 h-[calc(100%-12rem)] overflow-scroll shadow">
-        {input === "" ? (
+        {!isSearchable(input) ? (
           <ShowUnorderedList items={defaultFaqs} input={input} />
         ) : (
           <ShowUnorderedList items={faqs} input={input} />
