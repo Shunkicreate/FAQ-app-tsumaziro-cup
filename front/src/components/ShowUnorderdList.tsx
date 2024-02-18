@@ -1,5 +1,6 @@
 import {ListItem, UnorderedList, useColorModeValue} from "@chakra-ui/react";
 import {FAQ} from "../types";
+import isSearchable from "../utils/isSearchable";
 
 type FAQListProps = {
   items: FAQ[];
@@ -16,7 +17,7 @@ const FAQList = ({
 }: FAQListProps): JSX.Element => {
   return (
     <>
-      {input === "" ? (
+      {!isSearchable(input) ? (
         <span className="text-[#2B546A] text-base">よくある質問</span>
       ) : (
         <span className="text-[#2B546A] text-base">{`${items.length} questions matched`}</span>

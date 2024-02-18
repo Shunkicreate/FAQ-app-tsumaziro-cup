@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import {ApiResponseArray, FAQ} from "../types";
 import {azureAISearch} from "../utils/api";
-
+import isSearchable from "../utils/isSearchable";
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const useQuestion = () => {
   const searchParams = new URLSearchParams(window.location.search);
@@ -70,7 +70,7 @@ const useQuestion = () => {
     handleURL(inputValue);
     setInput(inputValue);
 
-    if (inputValue === "") {
+    if (!isSearchable(inputValue)) {
       setFaqs([]);
       return;
     }
@@ -88,7 +88,7 @@ const useQuestion = () => {
   };
 
   const handleClickAISearch = async (query: string): Promise<void> => {
-    if (query === "") {
+    if (!isSearchable(query)) {
       window.alert("検索ワードを入力してください");
       return;
     }
