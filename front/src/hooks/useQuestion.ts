@@ -23,6 +23,7 @@ const useQuestion = () => {
       });
       localStorage.setItem("faqs", JSON.stringify(faqs));
       setDefaultFaqs(faqs.slice(0, 5));
+      await new Promise(resolve => setTimeout(resolve, 2000));
       setIsLoading(false);
       if (input !== "") {
         handleClickAISearch(input);
@@ -91,12 +92,16 @@ const useQuestion = () => {
       window.alert("検索ワードを入力してください");
       return;
     }
+    setIsLoading(true);
     azureAISearch(query).then(result => {
       const updatedFaqs = updateFaqs(faqs, result);
       setFaqs(updatedFaqs);
       window.history.replaceState({}, "", window.location.toString());
       // localStorage.setItem("faqs", JSON.stringify(updatedFaqs));
     });
+    // 2秒待ってからisLoadingをfalseにする
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    setIsLoading(false);
   };
 
   const handleInputSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
