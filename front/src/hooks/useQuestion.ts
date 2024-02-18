@@ -24,6 +24,9 @@ const useQuestion = () => {
       localStorage.setItem("faqs", JSON.stringify(faqs));
       setDefaultFaqs(faqs.slice(0, 5));
       setIsLoading(false);
+      if (input !== "") {
+        handleClickAISearch(input);
+      }
     })();
   }, []);
 
@@ -91,6 +94,7 @@ const useQuestion = () => {
     azureAISearch(query).then(result => {
       const updatedFaqs = updateFaqs(faqs, result);
       setFaqs(updatedFaqs);
+      window.history.replaceState({}, "", window.location.toString());
       // localStorage.setItem("faqs", JSON.stringify(updatedFaqs));
     });
   };
