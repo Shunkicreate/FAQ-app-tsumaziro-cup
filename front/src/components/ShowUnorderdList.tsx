@@ -1,5 +1,5 @@
-import {ListItem, UnorderedList, useColorModeValue} from "@chakra-ui/react";
-import {FAQ} from "../types";
+import { ListItem, UnorderedList, useColorModeValue } from "@chakra-ui/react";
+import { FAQ } from "../types";
 
 type FAQListProps = {
   items: FAQ[];
@@ -38,7 +38,7 @@ const FAQList = ({
               pl={2}
               py={2}
               color={color}
-              _hover={{bg: hoverColor}}
+              _hover={{ bg: hoverColor }}
               className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
             >
               <a
@@ -47,7 +47,12 @@ const FAQList = ({
                 target="_blank"
                 rel="noreferrer"
               >
-                {faq.genby === "ai" ? `AI: ` : ""}
+                {faq.genby === "ai" ? (
+                  <span className="bg-[#57D5C1] text-white px-2 py-1 rounded">AI</span>
+                ) : (
+                  ""
+                )}
+                <span> </span>
                 {faq.question}
               </a>
             </ListItem>
@@ -61,7 +66,7 @@ const ShowUnorderedList = (props: {
   items: FAQ[];
   input: string;
 }): JSX.Element => {
-  const {items, input} = props;
+  const { items, input } = props;
   const color = useColorModeValue("#2B546A", "gray.300");
   const hoverColor = useColorModeValue("gray.200", "gray.900");
   return (
@@ -75,4 +80,4 @@ const ShowUnorderedList = (props: {
 };
 
 export default ShowUnorderedList;
-export {FAQList};
+export { FAQList };
