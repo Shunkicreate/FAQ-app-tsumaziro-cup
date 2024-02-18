@@ -1,5 +1,4 @@
 import {ListItem, UnorderedList, useColorModeValue} from "@chakra-ui/react";
-import {Link} from "react-router-dom";
 import {FAQ} from "../types";
 
 type FAQListProps = {
@@ -23,20 +22,36 @@ const FAQList = ({
         <span className="text-[#2B546A] text-base">{`${items.length} questions matched`}</span>
       )}
       <UnorderedList p={4}>
-        {items.map((faq, i) => (
-          <ListItem
-            key={i}
-            pl={2}
-            py={2}
-            color={color}
-            _hover={{bg: hoverColor}}
-            className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
-          >
-            <Link to={`${faq.pageTitle}`} tabIndex={i + 3}>
-              {faq.question}
-            </Link>
-          </ListItem>
-        ))}
+        {items
+          .sort((a, b) => {
+            if (a.genby === "ai" && b.genby !== "ai") {
+              return -1;
+            }
+            if (a.genby !== "ai" && b.genby === "ai") {
+              return 1;
+            }
+            return 0;
+          })
+          .map((faq, i) => (
+            <ListItem
+              key={i}
+              pl={2}
+              py={2}
+              color={color}
+              _hover={{bg: hoverColor}}
+              className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
+            >
+              <a
+                href={`${faq.pageTitle}`}
+                tabIndex={i + 3}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {faq.genby === "ai" ? `AI: ` : ""}
+                {faq.question}
+              </a>
+            </ListItem>
+          ))}
       </UnorderedList>
     </>
   );
