@@ -23,7 +23,7 @@ const useQuestion = () => {
       });
       localStorage.setItem("faqs", JSON.stringify(faqs));
       setDefaultFaqs(faqs.slice(0, 5));
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise(resolve => setTimeout(resolve, 1300));
       setIsLoading(false);
       if (input !== "") {
         handleClickAISearch(input);
@@ -100,7 +100,7 @@ const useQuestion = () => {
       // localStorage.setItem("faqs", JSON.stringify(updatedFaqs));
     });
     // 2秒待ってからisLoadingをfalseにする
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    await new Promise(resolve => setTimeout(resolve, 1300));
     setIsLoading(false);
   };
 
