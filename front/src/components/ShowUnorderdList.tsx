@@ -1,5 +1,4 @@
 import { ListItem, UnorderedList, useColorModeValue } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 import { FAQ } from "../types";
 
 type FAQListProps = {
@@ -40,9 +39,10 @@ const FAQList = ({
             _hover={{ bg: hoverColor }}
             className="text-lg text-[#2B546A] list-inside list-square marker:text-[#57D5C1] rounded-md"
           >
-            <Link to={`${faq.pageTitle}`} tabIndex={i + 3}>
-              {faq.genby}: {faq.question}
-            </Link>
+            <a href={`${faq.pageTitle}`} tabIndex={i + 3} target="_blank"
+              rel="noreferrer">
+              {faq.genby === "ai" ? `AI: ` : ""}{faq.question}
+            </a>
           </ListItem>
         ))}
       </UnorderedList>
