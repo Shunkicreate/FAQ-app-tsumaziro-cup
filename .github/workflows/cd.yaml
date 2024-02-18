@@ -45,7 +45,7 @@ jobs:
         if: success()
         uses: peter-evans/create-or-update-comment@v1
         with:
-          issue-number: ${{ github.event.pull_request.number }}
+          issue-number: ${{github.event.number}}
           body: 'Deployment succeeded! 🚀'
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -53,6 +53,6 @@ jobs:
         if: failure()
         uses: peter-evans/create-or-update-comment@v1
         with:
-          issue-number: ${{ github.event.pull_request.number }}
+          issue-number: ${{github.event.number}}
           body: 'Deployment failed. 💥'
           token: ${{ secrets.GITHUB_TOKEN }}
