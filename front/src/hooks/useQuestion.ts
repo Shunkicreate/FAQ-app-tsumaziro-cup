@@ -62,18 +62,27 @@ const useQuestion = () => {
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    handleURL(e.target.value);
-    setInput(e.target.value);
-    if (e.target.value === "") {
+    const inputValue = e.target.value;
+    handleURL(inputValue);
+    setInput(inputValue);
+  
+    if (inputValue === "") {
       setFaqs([]);
       return;
     }
-    const faqs: FAQ[] = JSON.parse(localStorage.getItem("faqs") || "");
+  
+    const faqs: FAQ[] = JSON.parse(localStorage.getItem("faqs") || "[]");
+    const queries = inputValue.trim().split(/\s+/); // 半角・全角空白で分割
+  
     const filteredFaqs = faqs.filter(faq =>
-      faq.question.toLowerCase().includes(e.target.value.toLowerCase()),
+      queries.every(query =>
+        faq.question.toLowerCase().includes(query.toLowerCase()),
+      ),
     );
+  
     setFaqs(filteredFaqs);
   };
+  
 
   const handleClickAISearch = async (query: string): Promise<void> => {
     if (query === "") {
@@ -83,7 +92,7 @@ const useQuestion = () => {
     azureAISearch(query).then(result => {
       const updatedFaqs = updateFaqs(faqs, result);
       setFaqs(updatedFaqs);
-      localStorage.setItem("faqs", JSON.stringify(updatedFaqs));
+      // localStorage.setItem("faqs", JSON.stringify(updatedFaqs));
     });
   };
 
