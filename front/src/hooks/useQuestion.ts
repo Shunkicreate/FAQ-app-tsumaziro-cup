@@ -18,6 +18,9 @@ const useQuestion = () => {
     (async () => {
       const res = await fetch("/api/faqs");
       const faqs = (await res.json()) as FAQ[];
+      faqs.map(faq => {
+        faq.genby = "scrapbox";
+      })
       localStorage.setItem("faqs", JSON.stringify(faqs));
       setDefaultFaqs(faqs.slice(0, 5));
       setIsLoading(false);
@@ -26,15 +29,16 @@ const useQuestion = () => {
 
   const updateFaqs = (faqs: FAQ[], aiSearchResult: ApiResponseArray): FAQ[] => {
     // aiSearchResultからFAQオブジェクトの配列を作成
-    const aiFaqs = aiSearchResult.map(result => ({
+    const aiFaqs: FAQ[] = aiSearchResult.map(result => ({
       question: result.questions[0], // 仮定として、questionsの最初の要素を使用
       pageTitle: result.link,
+      genby: "ai",
     }));
 
     // faqsの各要素を更新またはそのまま使用
-    const updatedFaqs = faqs.map(faq => {
+    const updatedFaqs:FAQ[] = faqs.map(faq => {
       const aiFaq = aiFaqs.find(aiFaq => aiFaq.question === faq.question);
-      return aiFaq ? {...faq, pageTitle: aiFaq.pageTitle} : faq;
+      return aiFaq ? {...faq, pageTitle: aiFaq.pageTitle, genby: "ai"} : faq;
     });
 
     // aiFaqsにあってfaqsにない要素を追加

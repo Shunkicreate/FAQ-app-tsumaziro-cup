@@ -1,6 +1,7 @@
 type FAQ = {
   question: string;
   pageTitle: string;
+  genby: "scrapbox" | "ai";
 };
 
 type Page = {
