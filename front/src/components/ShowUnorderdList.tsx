@@ -47,7 +47,14 @@ const FAQList = ({
                 target="_blank"
                 rel="noreferrer"
               >
-                {faq.genby === "ai" ? `AI: ` : ""}
+                {faq.genby === "ai" ? (
+                  <span className="bg-[#57D5C1] text-white px-2 py-1 rounded">
+                    AI
+                  </span>
+                ) : (
+                  ""
+                )}
+                <span> </span>
                 {faq.question}
               </a>
             </ListItem>
