@@ -20,7 +20,7 @@ const useQuestion = () => {
       const faqs = (await res.json()) as FAQ[];
       faqs.map(faq => {
         faq.genby = "scrapbox";
-      })
+      });
       localStorage.setItem("faqs", JSON.stringify(faqs));
       setDefaultFaqs(faqs.slice(0, 5));
       setIsLoading(false);
@@ -36,7 +36,7 @@ const useQuestion = () => {
     }));
 
     // faqsの各要素を更新またはそのまま使用
-    const updatedFaqs:FAQ[] = faqs.map(faq => {
+    const updatedFaqs: FAQ[] = faqs.map(faq => {
       const aiFaq = aiFaqs.find(aiFaq => aiFaq.question === faq.question);
       return aiFaq ? {...faq, pageTitle: aiFaq.pageTitle, genby: "ai"} : faq;
     });
@@ -65,24 +65,23 @@ const useQuestion = () => {
     const inputValue = e.target.value;
     handleURL(inputValue);
     setInput(inputValue);
-  
+
     if (inputValue === "") {
       setFaqs([]);
       return;
     }
-  
+
     const faqs: FAQ[] = JSON.parse(localStorage.getItem("faqs") || "[]");
     const queries = inputValue.trim().split(/\s+/); // 半角・全角空白で分割
-  
+
     const filteredFaqs = faqs.filter(faq =>
       queries.every(query =>
         faq.question.toLowerCase().includes(query.toLowerCase()),
       ),
     );
-  
+
     setFaqs(filteredFaqs);
   };
-  
 
   const handleClickAISearch = async (query: string): Promise<void> => {
     if (query === "") {
